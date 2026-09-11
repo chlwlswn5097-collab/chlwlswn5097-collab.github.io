@@ -1,0 +1,266 @@
+.work-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+  justify-items: center;
+  align-items: center;  
+  width: 100%;
+  height: auto;
+  padding: 10rem 6rem 6rem 6rem;
+}
+.work-folder {
+  position: relative;
+  width: 366px;
+  height: 373px;
+  isolation: isolate;
+}
+@media (max-width: 1050px){
+  .work-section {
+    width: auto;
+    grid-template-columns: repeat(1,auto);
+    padding-top: 13rem;
+}
+}
+
+/* 폴더 뒤 */
+.work-folder-back {
+  position: absolute;
+  width: 300px;
+  height: 220px;
+  background-color: #afcfcb;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2rem;
+}
+
+/* 폴더 이미지 */
+.work-folder-img {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.work-folder-img img {
+  border-radius: 1rem;
+  top: 30px;
+  position: absolute;
+}
+.uiux_1 {
+  top: 20px !important;
+  left: 22px;
+  transform: rotate(-10deg) translateY(0);
+  z-index: 3;
+  width: 145px;
+}
+.uiux_2 {
+  top: 4px !important;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 4;
+  width: 145px;
+}
+.uiux_3 {
+  right: 22px;
+  transform: rotate(10deg) translateY(0);
+  z-index: 3;
+  width: 145px;
+}
+.web_1{
+  top: 20px !important;
+  left: 22px;
+  transform: rotate(-10deg) translateY(0);
+  z-index: 4;
+  width: 220px;
+}
+.web_2{
+  right: 22px;
+  transform: rotate(10deg) translateY(0);
+  z-index: 3;
+  width: 220px;
+}
+.banner_1 {
+  left: 22px;
+  transform: rotate(-10deg) translateY(0);
+  z-index: 2;
+  width: 145px;
+}
+.banner_2 {
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  width: 145px;
+  top: 12px !important;
+}
+.banner_3 {
+  right: 22px;
+  transform: rotate(10deg) translateY(0);
+  z-index: 4;
+  width: 145px;
+  top: 10px !important;
+}
+
+/* 폴더 앞 */
+:root {
+  --folder-path: path(
+    "M2,10 L0,16 L0,25 L1,26 L1,39 L2,40 L2,52 L3,53 L3,65 L4,66 L4,78 L5,79 L5,91 L6,92 L6,105 L7,106 L7,118 L8,119 L8,131 L9,132 L9,144 L10,145 L10,157 L11,158 L11,171 L12,172 L12,184 L13,185 L13,197 L14,198 L14,210 L15,211 L17,248 L22,258 L27,262 L33,264 L329,264 L335,262 L341,257 L344,252 L345,240 L346,239 L348,206 L349,205 L349,195 L350,194 L350,184 L351,183 L351,173 L352,172 L352,162 L353,161 L353,150 L354,149 L354,139 L355,138 L355,128 L356,127 L356,117 L357,116 L357,106 L358,105 L358,94 L359,93 L359,83 L360,82 L360,72 L361,71 L361,54 L358,48 L353,43 L346,40 L189,40 L186,38 L184,38 L178,33 L155,5 L151,2 L145,0 L16,0 L6,5 Z"
+  );
+}
+.work-folder-front {
+  position: relative;
+  width: 366px;
+  height: 265px;
+  border-radius: 2rem;
+  overflow: hidden;
+  z-index: 10;
+  top: 100px;
+  cursor: pointer;
+}
+.folder-blur-mask {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+.folder-blur {
+  position: absolute;
+  inset: 0;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 361 264'%3E%3Cpath fill='white' d='M2,10 L0,16 L0,25 L1,26 L1,39 L2,40 L2,52 L3,53 L3,65 L4,66 L4,78 L5,79 L5,91 L6,92 L6,105 L7,106 L7,118 L8,119 L8,131 L9,132 L9,144 L10,145 L10,157 L11,158 L11,171 L12,172 L12,184 L13,185 L13,197 L14,198 L14,210 L15,211 L17,248 L22,258 L27,262 L33,264 L329,264 L335,262 L341,257 L344,252 L345,240 L346,239 L348,206 L349,205 L349,195 L350,194 L350,184 L351,183 L351,173 L352,172 L352,162 L353,161 L353,150 L354,149 L354,139 L355,138 L355,128 L356,127 L356,117 L357,116 L357,106 L358,105 L358,94 L359,93 L359,83 L360,82 L360,72 L361,71 L361,54 L358,48 L353,43 L346,40 L189,40 L186,38 L184,38 L178,33 L155,5 L151,2 L145,0 L16,0 L6,5 Z'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 361 264'%3E%3Cpath fill='white' d='M2,10 L0,16 L0,25 L1,26 L1,39 L2,40 L2,52 L3,53 L3,65 L4,66 L4,78 L5,79 L5,91 L6,92 L6,105 L7,106 L7,118 L8,119 L8,131 L9,132 L9,144 L10,145 L10,157 L11,158 L11,171 L12,172 L12,184 L13,185 L13,197 L14,198 L14,210 L15,211 L17,248 L22,258 L27,262 L33,264 L329,264 L335,262 L341,257 L344,252 L345,240 L346,239 L348,206 L349,205 L349,195 L350,194 L350,184 L351,183 L351,173 L352,172 L352,162 L353,161 L353,150 L354,149 L354,139 L355,138 L355,128 L356,127 L356,117 L357,116 L357,106 L358,105 L358,94 L359,93 L359,83 L360,82 L360,72 L361,71 L361,54 L358,48 L353,43 L346,40 L189,40 L186,38 L184,38 L178,33 L155,5 L151,2 L145,0 L16,0 L6,5 Z'/%3E%3C/svg%3E");
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  border: 1px solid white;
+}
+.folder-tint {
+  position: absolute;
+  inset: 0;
+  clip-path: var(--folder-path);
+  background: linear-gradient(
+    to bottom,
+    rgba(195, 230, 226, 0.3) 0%,
+    /* 상단#C3E6E2 30% */ rgba(195, 230, 226, 1) 100% /* 하단#C3E6E2 100% */
+  );
+}
+/* 텍스트 및 화살표 */
+.work-folder ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 22px;
+  padding: 0 43px;
+}
+.work-folder ul li:nth-child(1) {
+  color: #3d5f5a;
+  font-size: 2.8rem;
+  line-height: 3.2rem;
+  font-weight: 700;
+}
+.work-folder-arrow-btn {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  right: 0;
+  top: 50%;
+  transform: translateY(50%);
+}
+.work-folder-arrow-btn svg.folder-arrow {
+  --arrow-color: #3D5F5A;
+  display: block;
+}
+
+.folder-arrow .arrow-shape path {
+  stroke: var(--arrow-color);
+}
+
+.work-folder-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 366px;
+  height: 373px;
+  transform-origin: top left;
+}
+
+/* 1340 부터 폴더 전체 크기 작게 표시 */
+@media (max-width : 1340px){
+  .work-folder {
+    width: 296px;
+    height: 301.66px;
+  }
+  .work-folder-inner {
+    transform: scale(0.8087);
+  }
+    .work-section {
+    width: auto;
+}
+}
+
+/* 폴더 hover 애니메이션 */
+.work-folder-img {
+  transition: transform 0.3s ease;
+}
+.work-folder:hover .work-folder-img {
+  transform: translateY(-20px);
+}
+@property --text-top {
+  syntax: '<color>';
+  inherits: false;
+  initial-value: #3D5F5A;
+}
+@property --text-bottom {
+  syntax: '<color>';
+  inherits: false;
+  initial-value: #3D5F5A;
+}
+.work-folder-front ul li:first-child {
+  background-image: linear-gradient(to bottom, var(--text-top), var(--text-bottom));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transition: --text-top 0.3s ease, --text-bottom 0.3s ease;
+}
+.work-folder:hover .work-folder-front ul li:first-child {
+color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.30);
+}
+.folder-arrow circle {
+  transition: fill 0.3s ease;
+}
+.work-folder:hover .folder-arrow circle {
+  fill: #3D5F5A;
+}
+.arrow-shape path {
+  transition: stroke 0.3s ease;
+}
+.work-folder:hover .arrow-shape path {
+  stroke: #ffffff;
+}
+@keyframes arrow-nudge {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+}
+.folder-arrow {
+  animation: arrow-nudge 1.2s ease-in-out infinite;
+  animation-play-state: paused;
+}
+.work-folder:hover .folder-arrow {
+  animation-play-state: running;
+}
+@media (prefers-reduced-motion: reduce) {
+  .folder-arrow {
+    animation-play-state: paused !important;
+  }
+}
