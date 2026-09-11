@@ -101,7 +101,8 @@ button {
 
   .scroll-container {
     height: auto;
-    overflow: visible;
+    overflow-x: hidden;
+    overflow-y: visible;
   }
 
   section {
