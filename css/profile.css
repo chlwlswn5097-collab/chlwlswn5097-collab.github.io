@@ -1,0 +1,236 @@
+.profile-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 10rem 6rem 6rem 6rem;
+  box-sizing: border-box;
+}
+/* 프로필 */
+.profile-left-section {
+  padding: 3rem;
+  background-color: #d7ebe8;
+  border-radius: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: auto;
+  box-sizing: border-box;
+}
+/* 사진 및 이름 */
+.profile-left-top-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.profile-left-top-box img {
+  width: 100%;
+  max-width: 34rem;
+  height: auto;
+  border-radius: 2rem;
+}
+.profile-top-box-text {
+  width: 100%;
+  max-width: 34rem;
+}
+.profile-top-box-text-name {
+  padding: 2rem 0 1rem 0;
+  font-weight: 700;
+  font-size: 2.4rem;
+}
+.profile-top-box-text-sub {
+  font-size: 2rem;
+}
+
+/* 개인정보 */
+.profile-left-bot-box {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+}
+.profile-bot-box-section {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem 0;
+  width: 100%;
+}
+.profile-bot-box-title {
+  width: 7rem;
+}
+.profile-bot-box-content, 
+.profile-bot-box-title{
+    font-size: 1.6rem;
+}
+.profile-bot-box-img {
+  display: flex;
+  flex-direction: row;
+}
+.profile-bot-box-img img {
+  margin-right: 1.2rem;
+  min-width: 24px;
+  max-width: 24px;
+}
+
+/* ////////////// */
+
+/* 경력 */
+.profile-right-section {
+  padding: 5rem 4rem 4rem 4rem;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.profile-right-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+.profile-right-box-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #3d5f5a;
+  padding-bottom: 2.5rem;
+  width: 100%;
+}
+.profile-right-box-item {
+  width: 100%;
+  margin-bottom: auto;
+}
+.profile-right-box-company {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 1.6rem;
+}
+.profile-right-box-company-group {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.profile-right-box-company p {
+  font-size: 1.8rem;
+  font-weight: 700;
+  /* width: 100%; */
+}
+.profile-right-box-company-title{
+    width: 100%;
+}
+.profile-right-box-company-group p:nth-child(1) {
+  padding-right: 2rem;
+}
+.profile-right-box-company-group p {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.profile-right-box-role {
+  width: 100%;
+}
+.profile-right-box-role p::before {
+  content: "• ";
+  margin: 0 0.4rem;
+}
+
+/* 미디어 쿼리 */
+
+@media (max-height: 900px) {
+  .profile-top-box-text-name {
+    font-size: 2rem;
+  }
+  .profile-left-bot-box {
+    max-width: 28rem;
+  }
+}
+
+@media (max-width: 1050px) {
+  .profile-section {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    padding-top: 13rem;
+  }
+  .profile-left-section {
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    border-radius: 0;
+  }
+  .profile-left-top-box {
+    flex-direction: row;
+  }
+  .profile-top-box-text {
+    padding-left: 4rem;
+    max-width: none;
+  }
+  .profile-top-box-text-name {
+    padding: 0 0 2rem 0;
+    font-size: 2.4rem;
+  }
+  .profile-left-bot-box {
+    max-width: none;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .profile-bot-box-section {
+    padding: 2rem 0;
+  }
+  .profile-right-section {
+    height: auto;
+  }
+}
+
+@media (max-width: 580px) {
+  .profile-left-top-box {
+    flex-direction: column;
+  }
+
+  .profile-section {
+    padding-top: 10rem;
+  }
+  .profile-left-top-box {
+    width: 100%;
+  }
+  .profile-left-top-box img {
+    width: 100%;
+    min-width: auto;
+    max-width: 100%;
+  }
+  .profile-top-box-text {
+    padding: 2rem 0 4rem 0;
+    max-width: 100%;
+  }
+  .profile-left-bot-box {
+    display: flex;
+  }
+  .profile-bot-box-section {
+    padding: 1rem 0;
+  }
+  .profile-right-box-company {
+    flex-direction: column;
+  }
+  .profile-right-section {
+    height: auto;
+  }
+  .profile-right-box-company-group p {
+    font-size: 1.6rem;
+    padding-top: 1rem;
+    width: auto;
+  }
+  .profile-right-box-company-group {
+    justify-content: space-between;
+    padding-bottom: 1.6rem;
+  }
+}
