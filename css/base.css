@@ -13,6 +13,7 @@ html {
   line-height: 1.6;
   letter-spacing: -0.03em;
   user-select: none;
+  overflow-x: hidden;
 }
 
 html::-webkit-scrollbar,
@@ -26,6 +27,7 @@ body {
   font-family: "Pretendard";
   line-height: 1.6;
   font-size: 1.6rem;
+  overflow-x: hidden;
 }
 
 img {
