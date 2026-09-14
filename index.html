@@ -359,8 +359,8 @@
 
         <section id="contact" class="contact-class" style="min-height: auto;">
           <h3>
-            포트폴리오를 끝까지 봐주셔서 감사합니다.<br />부족한 점은 배워가며
-            채우고, 맡은 일에는 책임감 있게 임하겠습니다.<br />좋은 기회로
+            포트폴리오를 끝까지 봐주셔서 감사합니다.<br /><br />부족한 점은 배워가며
+            채우고,<br />맡은 일에는 책임감 있게 임하겠습니다.<br /><br />좋은 기회로
             함께할 수 있기를 기대합니다.
           </h3>
           <a href="mailto:chlwlswn5097@gmail.com">chlwlswn5097@gmail.com</a>
@@ -369,188 +369,207 @@
       </div>
     </div>
     <!-- 페이지 전환 스크립트 260810-->
-    <script>
-      const links = document.querySelectorAll(".nav-link");
-      const sections = document.querySelectorAll("section");
-      const sectionArr = [...sections];
-      const container = document.querySelector(".scroll-container");
+<script>
+  const links = document.querySelectorAll(".nav-link");
+  const sections = document.querySelectorAll("section");
+  const sectionArr = [...sections];
+  const container = document.querySelector(".scroll-container");
 
-      let isScrolling = false;
-      let currentIndex = 0;
+  let isScrolling = false;
+  let currentIndex = 0;
+  let isClickScrolling = false; // ⭐ 추가: 클릭으로 인한 스크롤 중인지 여부
+  let clickScrollTimer;         // ⭐ 추가: 클릭 스크롤 타이머
 
-      // ========================================
-      // PC인지 확인
-      // ========================================
-      function isDesktop() {
-        return window.innerWidth > 1050 && window.innerHeight > 900;
+  // ========================================
+  // PC인지 확인
+  // ========================================
+  function isDesktop() {
+    return window.innerWidth > 1050 && window.innerHeight > 900;
+  }
+
+  // ========================================
+  // 네비 active 변경
+  // ========================================
+  function updateActiveNav(index = currentIndex) {
+    if (!sectionArr[index]) return;
+
+    const id = sectionArr[index].id;
+
+    links.forEach((link) => {
+      link.classList.toggle(
+        "active",
+        link.getAttribute("href") === "#" + id,
+      );
+    });
+  }
+
+  // ========================================
+  // PC 풀페이지 이동
+  // ========================================
+  function goToSection(index) {
+    currentIndex = Math.max(0, Math.min(index, sectionArr.length - 1));
+
+    // 태블릿 / 모바일에서는
+    // 풀페이지 이동 기능 사용 안 함
+    if (!isDesktop()) return;
+
+    isScrolling = true;
+
+    sectionArr[currentIndex].scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+
+    updateActiveNav();
+
+    setTimeout(() => {
+      isScrolling = false;
+    }, 700);
+  }
+
+  // ========================================
+  // 네비 클릭
+  // ========================================
+  links.forEach((link) => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+
+      const target = document.querySelector(link.getAttribute("href"));
+
+      if (!target) return;
+
+      const idx = sectionArr.indexOf(target);
+
+      // PC
+      if (isDesktop()) {
+        goToSection(idx);
       }
 
-      // ========================================
-      // 네비 active 변경
-      // ========================================
-      function updateActiveNav(index = currentIndex) {
-        if (!sectionArr[index]) return;
+      // 태블릿 / 모바일
+      else {
+        // ⭐ 클릭 즉시 active 고정
+        isClickScrolling = true;
+        currentIndex = idx;
+        updateActiveNav(idx);
 
-        const id = sectionArr[index].id;
-
-        links.forEach((link) => {
-          link.classList.toggle(
-            "active",
-            link.getAttribute("href") === "#" + id,
-          );
-        });
-      }
-
-      // ========================================
-      // PC 풀페이지 이동
-      // ========================================
-      function goToSection(index) {
-        currentIndex = Math.max(0, Math.min(index, sectionArr.length - 1));
-
-        // 태블릿 / 모바일에서는
-        // 풀페이지 이동 기능 사용 안 함
-        if (!isDesktop()) return;
-
-        isScrolling = true;
-
-        sectionArr[currentIndex].scrollIntoView({
+        target.scrollIntoView({
           behavior: "smooth",
           block: "start",
         });
 
-        updateActiveNav();
-
-        setTimeout(() => {
-          isScrolling = false;
-        }, 700);
+        // ⭐ 스크롤 애니메이션 끝날 때까지 스크롤 감지 로직 잠시 멈춤
+        clearTimeout(clickScrollTimer);
+        clickScrollTimer = setTimeout(() => {
+          isClickScrolling = false;
+        }, 800);
       }
+    });
+  });
 
-      // ========================================
-      // 네비 클릭
-      // ========================================
-      links.forEach((link) => {
-        link.addEventListener("click", (e) => {
-          e.preventDefault();
+  // ========================================
+  // PC에서만 마우스 휠 풀페이지
+  // ========================================
+  container.addEventListener(
+    "wheel",
+    (e) => {
+      // 태블릿 / 모바일에서는
+      // 휠 이벤트를 막지 않음
+      if (!isDesktop()) return;
 
-          const target = document.querySelector(link.getAttribute("href"));
+      e.preventDefault();
 
-          if (!target) return;
+      if (isScrolling) return;
 
-          const idx = sectionArr.indexOf(target);
+      const nextIndex = e.deltaY > 0 ? currentIndex + 1 : currentIndex - 1;
 
-          // PC
-          if (isDesktop()) {
-            goToSection(idx);
-          }
+      goToSection(nextIndex);
+    },
+    { passive: false },
+  );
 
-          // 태블릿 / 모바일
-          else {
-            target.scrollIntoView({
-              behavior: "smooth",
-              block: "start",
-            });
+  // ========================================
+  // 태블릿 / 모바일 일반 스크롤
+  // ========================================
+  function updateNavByScroll() {
+    if (isDesktop()) return;
+    if (isClickScrolling) return; // ⭐ 클릭 스크롤 중이면 감지 무시
 
-            currentIndex = idx;
-            updateActiveNav(idx);
-          }
-        });
-      });
+    const scrollTop = container.scrollTop;
+    const scrollHeight = container.scrollHeight;
+    const clientHeight = container.clientHeight;
 
-      // ========================================
-      // PC에서만 마우스 휠 풀페이지
-      // ========================================
-      container.addEventListener(
-        "wheel",
-        (e) => {
-          // 태블릿 / 모바일에서는
-          // 휠 이벤트를 막지 않음
-          if (!isDesktop()) return;
-
-          e.preventDefault();
-
-          if (isScrolling) return;
-
-          const nextIndex = e.deltaY > 0 ? currentIndex + 1 : currentIndex - 1;
-
-          goToSection(nextIndex);
-        },
-        { passive: false },
-      );
-
-      // ========================================
-      // 태블릿 / 모바일 일반 스크롤
-      // ========================================
-      function updateNavByScroll() {
-        if (isDesktop()) return;
-
-        const scrollTop = container.scrollTop;
-        const scrollHeight = container.scrollHeight;
-        const clientHeight = container.clientHeight;
-
-        // ⭐ 스크롤이 맨 아래에 도달했으면
-        // 마지막 section을 active
-        if (scrollTop + clientHeight >= scrollHeight - 5) {
-          currentIndex = sectionArr.length - 1;
-          updateActiveNav();
-          return;
-        }
-
-        const triggerPoint = window.innerHeight * 0.4;
-
-        let activeIndex = 0;
-
-        sectionArr.forEach((section, index) => {
-          const rect = section.getBoundingClientRect();
-
-          if (rect.top <= triggerPoint) {
-            activeIndex = index;
-          }
-        });
-
-        if (activeIndex !== currentIndex) {
-          currentIndex = activeIndex;
-          updateActiveNav();
-        }
-      }
-
-      // ⭐ 중요
-      // window가 아니라 scroll-container를 감지
-      container.addEventListener("scroll", updateNavByScroll);
-
-      // ========================================
-      // Scroll 버튼
-      // ========================================
-      const scrollBtn = document.querySelector("#scroll-btn");
-
-      if (scrollBtn) {
-        scrollBtn.addEventListener("click", () => {
-          const target = document.querySelector("#work");
-
-          if (!target) return;
-
-          const idx = sectionArr.indexOf(target);
-
-          if (isDesktop()) {
-            goToSection(idx);
-          } else {
-            target.scrollIntoView({
-              behavior: "smooth",
-              block: "start",
-            });
-
-            currentIndex = idx;
-            updateActiveNav(idx);
-          }
-        });
-      }
-
-      // ========================================
-      // 최초 실행
-      // ========================================
+    // ⭐ 스크롤이 맨 아래에 도달했으면
+    // 마지막 section을 active
+    if (scrollTop + clientHeight >= scrollHeight - 5) {
+      currentIndex = sectionArr.length - 1;
       updateActiveNav();
+      return;
+    }
 
-      // 모바일 / 태블릿 최초 위치 확인
-      updateNavByScroll();
-    </script>
+    const triggerPoint = window.innerHeight * 0.4;
+
+    let activeIndex = 0;
+
+    sectionArr.forEach((section, index) => {
+      const rect = section.getBoundingClientRect();
+
+      if (rect.top <= triggerPoint) {
+        activeIndex = index;
+      }
+    });
+
+    if (activeIndex !== currentIndex) {
+      currentIndex = activeIndex;
+      updateActiveNav();
+    }
+  }
+
+  // ⭐ 중요
+  // window가 아니라 scroll-container를 감지
+  container.addEventListener("scroll", updateNavByScroll);
+
+  // ========================================
+  // Scroll 버튼
+  // ========================================
+  const scrollBtn = document.querySelector("#scroll-btn");
+
+  if (scrollBtn) {
+    scrollBtn.addEventListener("click", () => {
+      const target = document.querySelector("#work");
+
+      if (!target) return;
+
+      const idx = sectionArr.indexOf(target);
+
+      if (isDesktop()) {
+        goToSection(idx);
+      } else {
+        // ⭐ 클릭 즉시 active 고정
+        isClickScrolling = true;
+        currentIndex = idx;
+        updateActiveNav(idx);
+
+        target.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+
+        // ⭐ 스크롤 애니메이션 끝날 때까지 스크롤 감지 로직 잠시 멈춤
+        clearTimeout(clickScrollTimer);
+        clickScrollTimer = setTimeout(() => {
+          isClickScrolling = false;
+        }, 800);
+      }
+    });
+  }
+
+  // ========================================
+  // 최초 실행
+  // ========================================
+  updateActiveNav();
+
+  // 모바일 / 태블릿 최초 위치 확인
+  updateNavByScroll();
+</script>
   </body>
 </html>
