@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: flex-start;
   width: 100%;
+  height: 100%;
   padding: 10rem 6rem 6rem 6rem;
   box-sizing: border-box;
 }
@@ -16,7 +17,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  height: auto;
+  height: 90%;
   box-sizing: border-box;
 }
 /* 사진 및 이름 */
@@ -28,7 +29,7 @@
 }
 .profile-left-top-box img {
   width: 100%;
-  max-width: 34rem;
+  max-width: 46rem;
   height: auto;
   border-radius: 2rem;
 }
@@ -78,9 +79,9 @@
 
 /* 경력 */
 .profile-right-section {
-  padding: 5rem 4rem 4rem 4rem;
+  padding: 2rem 4rem;
   width: 100%;
-  height: auto;
+  height: 90%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -91,6 +92,9 @@
   align-items: flex-start;
   justify-content: center;
   margin-bottom: 4rem;
+}
+.profile-right-box:last-child{
+  margin-bottom: 0;
 }
 .profile-right-box-title {
   font-size: 2.2rem;
@@ -140,6 +144,9 @@
   content: "• ";
   margin: 0 0.4rem;
 }
+.profile-right-section{
+  padding: 4rem;
+}
 
 /* 미디어 쿼리 */
 
@@ -149,6 +156,9 @@
   }
   .profile-left-bot-box {
     max-width: 28rem;
+  }
+  .profile-bot-box-section{
+    padding: 0.6rem 0;
   }
 }
 
@@ -163,8 +173,8 @@
     padding: 4rem;
     display: flex;
     flex-direction: column;
-    height: auto;
     width: 100%;
+    height: 90%;
     border-radius: 0;
   }
   .profile-left-top-box {
