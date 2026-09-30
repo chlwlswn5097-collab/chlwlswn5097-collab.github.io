@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  background-color: #f8f8f8;
+  color: #313131;
+  font-family: "Pretendard";
+  line-height: 1.6;
+  letter-spacing: -0.03em;
+  user-select: none;
+}
+
+html::-webkit-scrollbar,
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background-color: #f8f8f8;
+  color: #313131;
+  font-family: "Pretendard";
+  line-height: 1.6;
+  font-size: 1.6rem;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font: inherit;
+}
+
+/* Pretendard 웹폰트 등록 - 400, 500, 600, 700 굵기 */
+@font-face {
+  /* regular */
+  font-family: "Pretendard";
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  /* medium */
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2109@1.1/Pretendard-Medium.woff")
+    format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  /* SemiBold */
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2109@1.1/Pretendard-Bold.woff")
+    format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  /* bold */
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2109@1.1/Pretendard-Bold.woff")
+    format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+
+/* 태블릿 + 모바일 */
+@media (max-width: 1050px) {
+  html,
+  body {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  .scroll-container {
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: visible;
+  }
+
+  section {
+    height: auto !important;
+  }
+}
+
+/* 세로 높이가 부족한 PC에서는 일반 스크롤 */
+@media (min-width: 1051px) and (max-height: 900px) {
+  .scroll-container {
+    height: auto;
+    overflow-y: visible;
+  }
+
+  section {
+    height: auto !important;
+    min-height: 100vh;
+  }
+
+  #profile {
+    height: auto !important;
+  }
+}
