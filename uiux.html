@@ -1,0 +1,1767 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>uiux</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/uiux.css" />
+  </head>
+  <body>
+    <div class="wrap work-page">
+      <a href="index.html" class="nav-back">
+        <span class="arrow">←</span>
+      </a>
+
+      <nav>
+        <a
+          href="#uiuxwalkypet"
+          class="nav-link active"
+          data-target="walkypet-section"
+          >Walky Pet</a
+        >
+        <a href="#uiuxgtimer" class="nav-link" data-target="gtimer-section"
+          >G-Timer</a
+        >
+        <a href="#uiuxflip" class="nav-link" data-target="flip-section"
+          >열공시간</a
+        >
+      </nav>
+
+      <div class="walkypet-section work-section active">
+        <div id="uiuxwalkypet" class="uiux_main">
+          <div class="uiux_main_text">
+            <div class="uiux_main_text_logo">
+              <img src="img/png/walkypet_logo.png" alt="앱아이콘" />
+              <div>Team Project</div>
+            </div>
+            <h1>
+              강아지와의 산책·기록·챌린지를 한 앱에서!<br />포인트까지 쌓는 반려
+              필수 앱
+            </h1>
+            <p class="uiux_main_text_p1">
+              기획부터 UI 디자인까지 참여한 반려동물 산책 서비스
+            </p>
+            <p class="uiux_main_text_p2">Figma | 참여도 60% | 제작기간 2개월</p>
+          </div>
+          <div class="uiux_main_img">
+            <img class="uiux_main_img_pc" src="img/png/walkypet_main.png" />
+            <img class="uiux_main_img_mo" src="img/png/walkypet_main_M.png" />
+          </div>
+        </div>
+
+        <div class="project_goal uiux_content_section">
+          <h1>#1. 프로젝트 목표</h1>
+          <div class="project_goal_box">
+            <!-- 산책 동기부여 -->
+            <div class="project_goal_inbox">
+              <img
+                src="img/png/walkypetcomponent1.png"
+                alt="산책 동기부여 아이콘"
+              />
+              <h2>산책 동기부여</h2>
+              <p>포인트와 챌린지로 꾸준한 산책 습관을 유도하는 설계</p>
+            </div>
+            <!-- 기록의 즐거움 -->
+            <div class="project_goal_inbox">
+              <img
+                src="img/png/walkypetcomponent2.png"
+                alt="산책 동기부여 아이콘"
+              />
+              <h2>기록의 즐거움</h2>
+              <p>사진과 타임라인으로 산책 기록을 감성적으로 보여주는 UI</p>
+            </div>
+            <!-- 유대감 있는 커뮤니티 -->
+            <div class="project_goal_inbox">
+              <img
+                src="img/png/walkypetcomponent3.png"
+                alt="산책 동기부여 아이콘"
+              />
+              <h2>유대감 있는 커뮤니티</h2>
+              <p>같은 반려인들과 다양한 주제로 소통할 수 있는 공간 설계</p>
+            </div>
+            <!-- 이동 중에도 쉬운 조작 -->
+            <div class="project_goal_inbox">
+              <img
+                src="img/png/walkypetcomponent4.png"
+                alt="산책 동기부여 아이콘"
+              />
+              <h2>이동 중에도 쉬운 조작</h2>
+              <p>반려견 산책 중 한 손으로도 조작 가능한 직관적인 인터페이스</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="design_guide uiux_content_section">
+          <h1>#2. 디자인 가이드</h1>
+          <!-- 브랜드 컬러 -->
+          <div class="design_guide_box">
+            <h2>브랜드 컬러</h2>
+            <div class="design_guide_row">
+              <!-- 메인 컬러 -->
+              <div class="design_guide_inbox">
+                <div
+                  class="design_guide_inbox_color"
+                  style="background-color: #ff8c93"
+                ></div>
+                <div class="design_guide_inbox_text">
+                  <p class="design_guide_inbox_text_top">메인 컬러</p>
+                  <p class="design_guide_inbox_text_bot">#FF8C93</p>
+                </div>
+              </div>
+              <!-- 본문 텍스트 -->
+              <div class="design_guide_inbox">
+                <div
+                  class="design_guide_inbox_color"
+                  style="background-color: #313131"
+                ></div>
+                <div class="design_guide_inbox_text">
+                  <p class="design_guide_inbox_text_top">본문 텍스트</p>
+                  <p class="design_guide_inbox_text_bot">#313131</p>
+                </div>
+              </div>
+              <!-- 보조 텍스트 -->
+              <div class="design_guide_inbox">
+                <div
+                  class="design_guide_inbox_color"
+                  style="background-color: #555555"
+                ></div>
+                <div class="design_guide_inbox_text">
+                  <p class="design_guide_inbox_text_top">보조 텍스트</p>
+                  <p class="design_guide_inbox_text_bot">#555555</p>
+                </div>
+              </div>
+              <!-- 모달 보조 텍스트-->
+              <div class="design_guide_inbox">
+                <div
+                  class="design_guide_inbox_color"
+                  style="background-color: #808080"
+                ></div>
+                <div class="design_guide_inbox_text">
+                  <p class="design_guide_inbox_text_top">모달 보조 텍스트</p>
+                  <p class="design_guide_inbox_text_bot">#808080</p>
+                </div>
+              </div>
+              <!-- 배경 -->
+              <div class="design_guide_inbox">
+                <div
+                  class="design_guide_inbox_color"
+                  style="background-color: #f8f8f8; border: 1px solid #d0d0d0"
+                ></div>
+                <div class="design_guide_inbox_text">
+                  <p class="design_guide_inbox_text_top">배경</p>
+                  <p class="design_guide_inbox_text_bot">#F8F8F8</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 시스템 컬러 -->
+          <div class="design_guide_box">
+            <h2 style="padding-bottom: 0">시스템 컬러</h2>
+            <span style="padding-bottom: 2rem"
+              >커뮤니티 내 카테고리 구분용</span
+            >
+            <div class="design_guide_row">
+              <!-- 일상 -->
+              <div class="design_guide_inbox">
+                <div
+                  class="design_guide_inbox_color"
+                  style="background-color: #ed8a8a"
+                ></div>
+                <div class="design_guide_inbox_text">
+                  <p class="design_guide_inbox_text_top">일상</p>
+                  <p class="design_guide_inbox_text_bot">#ED8A8A</p>
+                </div>
+              </div>
+              <!-- 질문있어요 -->
+              <div class="design_guide_inbox">
+                <div
+                  class="design_guide_inbox_color"
+                  style="background-color: #81a2cd"
+                ></div>
+                <div class="design_guide_inbox_text">
+                  <p class="design_guide_inbox_text_top">질문있어요</p>
+                  <p class="design_guide_inbox_text_bot">#81A2CD</p>
+                </div>
+              </div>
+              <!-- 건강 -->
+              <div class="design_guide_inbox">
+                <div
+                  class="design_guide_inbox_color"
+                  style="background-color: #f9a657"
+                ></div>
+                <div class="design_guide_inbox_text">
+                  <p class="design_guide_inbox_text_top">건강</p>
+                  <p class="design_guide_inbox_text_bot">#F9A657</p>
+                </div>
+              </div>
+              <!-- 후기-->
+              <div class="design_guide_inbox">
+                <div
+                  class="design_guide_inbox_color"
+                  style="background-color: #9dcd74"
+                ></div>
+                <div class="design_guide_inbox_text">
+                  <p class="design_guide_inbox_text_top">후기</p>
+                  <p class="design_guide_inbox_text_bot">#9DCD74</p>
+                </div>
+              </div>
+              <!-- 정보공유 -->
+              <div class="design_guide_inbox">
+                <div
+                  class="design_guide_inbox_color"
+                  style="background-color: #a48cd9"
+                ></div>
+                <div class="design_guide_inbox_text">
+                  <p class="design_guide_inbox_text_top">정보공유</p>
+                  <p class="design_guide_inbox_text_bot">#A48CD9</p>
+                </div>
+              </div>
+              <!-- 긴급 -->
+              <div class="design_guide_inbox">
+                <div
+                  class="design_guide_inbox_color"
+                  style="background-color: #f46d6d"
+                ></div>
+                <div class="design_guide_inbox_text">
+                  <p class="design_guide_inbox_text_top">긴급</p>
+                  <p class="design_guide_inbox_text_bot">#F46D6D</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 폰트 -->
+          <div
+            class="design_guide_box"
+            style="border-bottom: 0; padding-bottom: 0"
+          >
+            <h2 style="padding-bottom: 0">폰트</h2>
+            <p class="design_guide_box_font_title">
+              가나다&nbsp;&nbsp;&nbsp;ABC
+            </p>
+            <p class="design_guide_box_font_sub">Pretendard</p>
+            <ul>
+              <li>Regular</li>
+              <li>Medium</li>
+              <li>SemiBold</li>
+              <li>Bold</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="menu_structure uiux_content_section">
+          <h1>#3. 메뉴 구조</h1>
+          <div class="menu_structure_row">
+            <div class="menu_structure_label">다이어리</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">기록 작성</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">년도/월 표시</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">월간 갤러리 뷰</div>
+          </div>
+          <div class="menu_structure_row">
+            <div class="menu_structure_label">커뮤니티</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">펫친구</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">펫케어</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">펫챌린지</div>
+          </div>
+          <div class="menu_structure_row">
+            <div class="menu_structure_label">산책</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">산책 시작</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">산책 진행</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">산책 기록</div>
+          </div>
+          <div class="menu_structure_row">
+            <div class="menu_structure_label">일정</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">일정 추가</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">날씨</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">캘린더 뷰</div>
+          </div>
+          <div class="menu_structure_row">
+            <div class="menu_structure_label">마이</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">내 포인트</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">정보 수정</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">산책 목표 설정</div>
+          </div>
+        </div>
+
+        <div class="troubleshooting uiux_content_section">
+          <h1>#4. 트러블슈팅 & 의사결정 과정</h1>
+          <!-- 1) 사진 기록 이탈 방지 UX -->
+          <div class="troubleshooting_box">
+            <h2>1) 사진 기록 이탈 방지 UX</h2>
+            <div class="troubleshooting_inbox">
+              <ul>
+                <li>[문제]</li>
+                <li>
+                  1. 산책 중 사진을 찍고 기록 없이 닫으면 자동 삭제되는데,
+                  사용자가 이를 모른 채 닫기를 눌러 사진을 잃을 수 있음
+                </li>
+              </ul>
+              <ul>
+                <li>[해결]</li>
+                <li>
+                  1. 닫기 시 ‘기록하지 않으면 사진이 사라집니다. 정말 닫을까요?’
+                  경고 팝업 노출 → 취소 시 복귀, 닫기 시 이탈
+                </li>
+              </ul>
+              <ul>
+                <li>[결과]</li>
+                <li>
+                  1. 기존 삭제 정책은 유지하면서도, 사용자가 실수로 사진을 잃는
+                  상황을 방지함
+                </li>
+              </ul>
+            </div>
+            <div class="troubleshooting_box_beforeANDafter">
+              <p class="troubleshooting_box_img_title">
+                Before - 닫기 누르면 바로 나가짐 (안내 없음)
+              </p>
+              <img
+                class="troubleshooting_box_img_pc"
+                src="img/png/walkypet4-1before.png"
+              />
+              <img
+                class="troubleshooting_box_img_mo"
+                src="img/png/M_walkypet4-1before.png"
+              />
+            </div>
+            <div class="troubleshooting_box_beforeANDafter">
+              <p class="troubleshooting_box_img_title">
+                After - 경고 팝업으로 실수 방지
+              </p>
+              <img
+                class="troubleshooting_box_img_pc"
+                src="img/png/walkypet4-1after.png"
+              />
+              <img
+                class="troubleshooting_box_img_mo"
+                src="img/png/M_walkypet4-1after.png"
+              />
+            </div>
+          </div>
+          <!-- 2) 산책 도중 찍은 사진 기록 상태 구분 UX -->
+          <div class="troubleshooting_box">
+            <h2>2) 산책 도중 찍은 사진 기록 상태 구분 UX</h2>
+            <div class="troubleshooting_inbox">
+              <ul>
+                <li>[문제]</li>
+                <li>1. '선택' 버튼만으로는 기록 방법이 헷갈림</li>
+                <li>2. 이미 기록된 사진과 새 사진 구분이 안 됨</li>
+              </ul>
+              <ul>
+                <li>[해결]</li>
+                <li>
+                  1. 갤러리 상단에 '선택한 사진만 기록됩니다' 안내 문구 배치
+                </li>
+                <li>
+                  2. '선택' 후 '기록하기'가 뜨던 2단계를, 진입 시 CTA 바로
+                  노출로 변경
+                </li>
+                <li>
+                  3. 사진을 업로드 시간순으로 구분하고, 이미 기록 완료된 이전
+                  사진은 비활성화 처리해 현재 장소에서 찍은 사진만 선택
+                  가능하도록 설계
+                </li>
+              </ul>
+              <ul>
+                <li>[결과]</li>
+                <li>
+                  1. 불필요한 단계를 줄여 선택부터 기록까지 더 빠르고 직관적으로
+                  이어짐
+                </li>
+                <li>
+                  2. 기록 가능한 사진과 이미 기록된 사진이 헷갈리지 않아 중복
+                  선택 방지
+                </li>
+                <li>
+                  3. 갤러리 형식 그대로 시간순 확인이 가능해 흐름이 자연스러움
+                </li>
+              </ul>
+            </div>
+            <div class="troubleshooting_box_beforeANDafter">
+              <p class="troubleshooting_box_img_title">
+                Before - 기록 흐름과 사진 구분이 불명확
+              </p>
+              <img
+                class="troubleshooting_box_img_pc"
+                src="img/png/walkypet4-2before.png"
+              />
+              <img
+                class="troubleshooting_box_img_mo"
+                src="img/png/M_walkypet4-2before.png"
+              />
+            </div>
+            <div class="troubleshooting_box_beforeANDafter">
+              <p class="troubleshooting_box_img_title">
+                After - 안내 문구와 함께 기록 흐름을 진입 즉시 제공
+              </p>
+              <img
+                class="troubleshooting_box_img_pc"
+                src="img/png/walkypet4-2after.png"
+              />
+              <img
+                class="troubleshooting_box_img_mo"
+                src="img/png/M_walkypet4-2after.png"
+              />
+            </div>
+          </div>
+          <!-- 3) 케어TIP 카드 이동 방식 -->
+          <div class="troubleshooting_box">
+            <h2>3) 케어TIP 카드 이동 방식</h2>
+            <div class="troubleshooting_inbox">
+              <ul>
+                <li>[문제]</li>
+                <li>
+                  1. 케어팁 카드를 눌렀을 때 외부 링크(인스타그램, 블로그 등)로
+                  바로 이동하면, 사용자가 앱을 이탈해 다시 돌아오지 않을 위험이
+                  있음
+                </li>
+              </ul>
+              <ul>
+                <li>[해결]</li>
+                <li>
+                  1. 카드 터치 시 외부 링크로 이동하지 않고, 앱 내에서 볼 수
+                  있는 페이지로 이동하도록 설계
+                </li>
+                <li>
+                  2. 노데이터 상태를 방지하기 위해 앱 출시 전 콘텐츠를 미리 몇
+                  가지 등록해두는 방식으로 준비
+                </li>
+              </ul>
+              <ul>
+                <li>[결과]</li>
+                <li>
+                  1. 사용자가 외부로 이탈하지 않고 앱 안에서 콘텐츠를 계속
+                  소비하게 되어, 체류 시간과 앱 내 활동을 유지할 수 있음
+                </li>
+              </ul>
+            </div>
+            <div class="troubleshooting_box_beforeANDafter">
+              <img
+                class="troubleshooting_box_img_pc"
+                src="img/png/walkypet4-3.png"
+              />
+              <img
+                class="troubleshooting_box_img_mo"
+                src="img/png/M_walkypet4-3.png"
+              />
+            </div>
+          </div>
+          <!-- 4) 산책 메인 안내 문구 다양화-->
+          <div class="troubleshooting_box" style="border-bottom: 0">
+            <h2>4) 산책 메인 안내 문구 다양화</h2>
+            <div class="troubleshooting_inbox">
+              <ul>
+                <li>[문제]</li>
+                <li>
+                  1. 산책 메인 화면의 안내 문구가 고정되어 있으면 반복 노출 시
+                  지루하게 느껴질 수 있음
+                </li>
+              </ul>
+              <ul>
+                <li>[해결]</li>
+                <li>
+                  1. 여러 개의 문구를 미리 정해두고, 상황이나 방문 시점마다 다른
+                  문구가 노출되도록 롤링 방식 적용
+                </li>
+              </ul>
+              <ul>
+                <li>[결과]</li>
+                <li>
+                  1. 여러 개의 문구를 미리 정해두고, 상황이나 방문 시점마다 다른
+                  문구가 노출되도록 롤링 방식 적용
+                </li>
+                <li style="color: #f46d6d">
+                  &nbsp;&nbsp;&nbsp;예) “오늘 산책 다녀왔어요, 또 가볼까요?” /
+                  “오늘도 함께 걸어볼까요?” 등
+                </li>
+              </ul>
+            </div>
+            <div class="troubleshooting_box_beforeANDafter">
+              <img
+                class="troubleshooting_box_img_pc"
+                src="img/png/walkypet4-4.png"
+              />
+              <img
+                class="troubleshooting_box_img_mo"
+                src="img/png/M_walkypet4-4.png"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="uiux_last">
+          <div class="uiux_last_text">
+            <p class="uiux_last_sub">다이어리</p>
+            <h1>우리 아이의 하루를 기록해요</h1>
+            <p class="uiux_last_text_p1">
+              날짜별로 오늘의 기분과 날씨, 사진까지 간편하게 남길 수 있어요.<br />여러
+              마리를 키운다면<br />반려동물을 한 번에 선택해 함께 기록할 수
+              있어요.
+            </p>
+            <p class="uiux_last_participation">Design & Planning 100%</p>
+          </div>
+          <div class="uiux_last_img">
+            <img class="uiux_last_img_pc" src="img/png/walkypetLastimg1.png" />
+            <img
+              class="uiux_last_img_mo"
+              src="img/png/M_walkypetLastimg1.png"
+            />
+          </div>
+        </div>
+
+        <div class="uiux_last" style="background-color: #f8f8f8">
+          <div class="uiux_last_text">
+            <p class="uiux_last_sub">커뮤니티</p>
+            <h1>반려인들의 이야기가 모이는 곳</h1>
+            <p class="uiux_last_text_p1">
+              펫친구, 펫케어, 펫챌린지까지<br />
+              한 곳에서 다양한 정보와 소통을 나눌 수 있어요.
+            </p>
+            <p class="uiux_last_participation">Design & Planning 100%</p>
+          </div>
+          <div class="uiux_last_img">
+            <img class="uiux_last_img_pc" src="img/png/walkypetLastimg2.png" />
+            <img
+              class="uiux_last_img_mo"
+              src="img/png/M_walkypetLastimg2.png"
+            />
+          </div>
+        </div>
+
+        <div class="uiux_last">
+          <div class="uiux_last_text">
+            <p class="uiux_last_sub">산책</p>
+            <h1>오늘도 함께, 산책 미션 완료!</h1>
+            <p class="uiux_last_text_p1">
+              오늘의 미션을 완료하면 포인트가 쌓이고,<br />
+              걸음 수, 시간, 거리와 산책 경로까지 자동으로 기록돼요.<br /><br />
+              산책 현황 캘린더에서 그동안의 기록을 한눈에 모아볼 수 있어요.
+            </p>
+            <p class="uiux_last_participation">Design & Planning by Teammate</p>
+          </div>
+          <div class="uiux_last_img">
+            <img class="uiux_last_img_pc" src="img/png/walkypetLastimg3.png" />
+            <img
+              class="uiux_last_img_mo"
+              src="img/png/M_walkypetLastimg3.png"
+            />
+          </div>
+        </div>
+
+        <div class="uiux_last" style="background-color: #f8f8f8">
+          <div class="uiux_last_text">
+            <p class="uiux_last_sub">일정</p>
+            <h1>우리 아이 일정, 한눈에 관리해요</h1>
+            <p class="uiux_last_text_p1">
+              카테고리를 선택해 간편하게 일정을 등록해요.<br /><br />
+              반복 설정으로 매일 챙겨야 할 루틴도 빠짐없이 기록하고, 여러 아이를
+              키운다면 함께 선택해 일정을 공유할 수 있어요.
+            </p>
+            <p class="uiux_last_participation">Design & Planning 100%</p>
+          </div>
+          <div class="uiux_last_img">
+            <img class="uiux_last_img_pc" src="img/png/walkypetLastimg4.png" />
+            <img
+              class="uiux_last_img_mo"
+              src="img/png/M_walkypetLastimg4.png"
+            />
+          </div>
+        </div>
+
+        <div class="main_back_box">
+          <a href="index.html">
+            <span class="main_back_box_arrow">←</span>
+            <span class="main_back_box_text">포트폴리오 메인으로 돌아가기</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="gtimer-section work-section">
+        <div id="uiuxgtimer" class="uiux_main">
+          <div class="uiux_main_text">
+            <div class="uiux_main_text_logo">
+              <img src="img/png/walkypet_logo.png" alt="앱아이콘" />
+              <div>Team Project</div>
+            </div>
+            <h1>
+              강아지와의 5555555555 앱에서!<br />포인트까지 쌓는 반려
+              필수 앱
+            </h1>
+            <p class="uiux_main_text_p1">
+              기획부터 UI 디자인까지 참여한 반려동물 산책 서비스
+            </p>
+            <p class="uiux_main_text_p2">Figma | 참여도 60% | 제작기간 2개월</p>
+          </div>
+          <div class="uiux_main_img">
+            <img class="uiux_main_img_pc" src="img/png/walkypet_main.png" />
+            <img class="uiux_main_img_mo" src="img/png/walkypet_main_M.png" />
+          </div>
+        </div>
+
+        <div class="project_goal uiux_content_section">
+          <h1>#1. 프로젝트 목표</h1>
+          <div class="project_goal_box">
+            <!-- 산책 동기부여 -->
+            <div class="project_goal_inbox">
+              <img
+                src="img/png/walkypetcomponent1.png"
+                alt="산책 동기부여 아이콘"
+              />
+              <h2>산책 동기부여</h2>
+              <p>포인트와 챌린지로 꾸준한 산책 습관을 유도하는 설계</p>
+            </div>
+            <!-- 기록의 즐거움 -->
+            <div class="project_goal_inbox">
+              <img
+                src="img/png/walkypetcomponent2.png"
+                alt="산책 동기부여 아이콘"
+              />
+              <h2>기록의 즐거움</h2>
+              <p>사진과 타임라인으로 산책 기록을 감성적으로 보여주는 UI</p>
+            </div>
+            <!-- 유대감 있는 커뮤니티 -->
+            <div class="project_goal_inbox">
+              <img
+                src="img/png/walkypetcomponent3.png"
+                alt="산책 동기부여 아이콘"
+              />
+              <h2>유대감 있는 커뮤니티</h2>
+              <p>같은 반려인들과 다양한 주제로 소통할 수 있는 공간 설계</p>
+            </div>
+            <!-- 이동 중에도 쉬운 조작 -->
+            <div class="project_goal_inbox">
+              <img
+                src="img/png/walkypetcomponent4.png"
+                alt="산책 동기부여 아이콘"
+              />
+              <h2>이동 중에도 쉬운 조작</h2>
+              <p>반려견 산책 중 한 손으로도 조작 가능한 직관적인 인터페이스</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="design_guide uiux_content_section">
+          <h1>#2. 디자인 가이드</h1>
+          <!-- 브랜드 컬러 -->
+          <div class="design_guide_box">
+            <h2>브랜드 컬러</h2>
+            <div class="design_guide_row">
+              <!-- 메인 컬러 -->
+              <div class="design_guide_inbox">
+                <div
+                  class="design_guide_inbox_color"
+                  style="background-color: #ff8c93"
+                ></div>
+                <div class="design_guide_inbox_text">
+                  <p class="design_guide_inbox_text_top">메인 컬러</p>
+                  <p class="design_guide_inbox_text_bot">#FF8C93</p>
+                </div>
+              </div>
+              <!-- 본문 텍스트 -->
+              <div class="design_guide_inbox">
+                <div
+                  class="design_guide_inbox_color"
+                  style="background-color: #313131"
+                ></div>
+                <div class="design_guide_inbox_text">
+                  <p class="design_guide_inbox_text_top">본문 텍스트</p>
+                  <p class="design_guide_inbox_text_bot">#313131</p>
+                </div>
+              </div>
+              <!-- 보조 텍스트 -->
+              <div class="design_guide_inbox">
+                <div
+                  class="design_guide_inbox_color"
+                  style="background-color: #555555"
+                ></div>
+                <div class="design_guide_inbox_text">
+                  <p class="design_guide_inbox_text_top">보조 텍스트</p>
+                  <p class="design_guide_inbox_text_bot">#555555</p>
+                </div>
+              </div>
+              <!-- 모달 보조 텍스트-->
+              <div class="design_guide_inbox">
+                <div
+                  class="design_guide_inbox_color"
+                  style="background-color: #808080"
+                ></div>
+                <div class="design_guide_inbox_text">
+                  <p class="design_guide_inbox_text_top">모달 보조 텍스트</p>
+                  <p class="design_guide_inbox_text_bot">#808080</p>
+                </div>
+              </div>
+              <!-- 배경 -->
+              <div class="design_guide_inbox">
+                <div
+                  class="design_guide_inbox_color"
+                  style="background-color: #f8f8f8; border: 1px solid #d0d0d0"
+                ></div>
+                <div class="design_guide_inbox_text">
+                  <p class="design_guide_inbox_text_top">배경</p>
+                  <p class="design_guide_inbox_text_bot">#F8F8F8</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 시스템 컬러 -->
+          <div class="design_guide_box">
+            <h2 style="padding-bottom: 0">시스템 컬러</h2>
+            <span style="padding-bottom: 2rem"
+              >커뮤니티 내 카테고리 구분용</span
+            >
+            <div class="design_guide_row">
+              <!-- 일상 -->
+              <div class="design_guide_inbox">
+                <div
+                  class="design_guide_inbox_color"
+                  style="background-color: #ed8a8a"
+                ></div>
+                <div class="design_guide_inbox_text">
+                  <p class="design_guide_inbox_text_top">일상</p>
+                  <p class="design_guide_inbox_text_bot">#ED8A8A</p>
+                </div>
+              </div>
+              <!-- 질문있어요 -->
+              <div class="design_guide_inbox">
+                <div
+                  class="design_guide_inbox_color"
+                  style="background-color: #81a2cd"
+                ></div>
+                <div class="design_guide_inbox_text">
+                  <p class="design_guide_inbox_text_top">질문있어요</p>
+                  <p class="design_guide_inbox_text_bot">#81A2CD</p>
+                </div>
+              </div>
+              <!-- 건강 -->
+              <div class="design_guide_inbox">
+                <div
+                  class="design_guide_inbox_color"
+                  style="background-color: #f9a657"
+                ></div>
+                <div class="design_guide_inbox_text">
+                  <p class="design_guide_inbox_text_top">건강</p>
+                  <p class="design_guide_inbox_text_bot">#F9A657</p>
+                </div>
+              </div>
+              <!-- 후기-->
+              <div class="design_guide_inbox">
+                <div
+                  class="design_guide_inbox_color"
+                  style="background-color: #9dcd74"
+                ></div>
+                <div class="design_guide_inbox_text">
+                  <p class="design_guide_inbox_text_top">후기</p>
+                  <p class="design_guide_inbox_text_bot">#9DCD74</p>
+                </div>
+              </div>
+              <!-- 정보공유 -->
+              <div class="design_guide_inbox">
+                <div
+                  class="design_guide_inbox_color"
+                  style="background-color: #a48cd9"
+                ></div>
+                <div class="design_guide_inbox_text">
+                  <p class="design_guide_inbox_text_top">정보공유</p>
+                  <p class="design_guide_inbox_text_bot">#A48CD9</p>
+                </div>
+              </div>
+              <!-- 긴급 -->
+              <div class="design_guide_inbox">
+                <div
+                  class="design_guide_inbox_color"
+                  style="background-color: #f46d6d"
+                ></div>
+                <div class="design_guide_inbox_text">
+                  <p class="design_guide_inbox_text_top">긴급</p>
+                  <p class="design_guide_inbox_text_bot">#F46D6D</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 폰트 -->
+          <div
+            class="design_guide_box"
+            style="border-bottom: 0; padding-bottom: 0"
+          >
+            <h2 style="padding-bottom: 0">폰트</h2>
+            <p class="design_guide_box_font_title">
+              가나다&nbsp;&nbsp;&nbsp;ABC
+            </p>
+            <p class="design_guide_box_font_sub">Pretendard</p>
+            <ul>
+              <li>Regular</li>
+              <li>Medium</li>
+              <li>SemiBold</li>
+              <li>Bold</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="menu_structure uiux_content_section">
+          <h1>#3. 메뉴 구조</h1>
+          <div class="menu_structure_row">
+            <div class="menu_structure_label">다이어리</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">기록 작성</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">년도/월 표시</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">월간 갤러리 뷰</div>
+          </div>
+          <div class="menu_structure_row">
+            <div class="menu_structure_label">커뮤니티</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">펫친구</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">펫케어</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">펫챌린지</div>
+          </div>
+          <div class="menu_structure_row">
+            <div class="menu_structure_label">산책</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">산책 시작</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">산책 진행</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">산책 기록</div>
+          </div>
+          <div class="menu_structure_row">
+            <div class="menu_structure_label">일정</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">일정 추가</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">날씨</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">캘린더 뷰</div>
+          </div>
+          <div class="menu_structure_row">
+            <div class="menu_structure_label">마이</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">내 포인트</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">정보 수정</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">산책 목표 설정</div>
+          </div>
+        </div>
+
+        <div class="troubleshooting uiux_content_section">
+          <h1>#4. 트러블슈팅 & 의사결정 과정</h1>
+          <!-- 1) 사진 기록 이탈 방지 UX -->
+          <div class="troubleshooting_box">
+            <h2>1) 사진 기록 이탈 방지 UX</h2>
+            <div class="troubleshooting_inbox">
+              <ul>
+                <li>[문제]</li>
+                <li>
+                  1. 산책 중 사진을 찍고 기록 없이 닫으면 자동 삭제되는데,
+                  사용자가 이를 모른 채 닫기를 눌러 사진을 잃을 수 있음
+                </li>
+              </ul>
+              <ul>
+                <li>[해결]</li>
+                <li>
+                  1. 닫기 시 ‘기록하지 않으면 사진이 사라집니다. 정말 닫을까요?’
+                  경고 팝업 노출 → 취소 시 복귀, 닫기 시 이탈
+                </li>
+              </ul>
+              <ul>
+                <li>[결과]</li>
+                <li>
+                  1. 기존 삭제 정책은 유지하면서도, 사용자가 실수로 사진을 잃는
+                  상황을 방지함
+                </li>
+              </ul>
+            </div>
+            <div class="troubleshooting_box_beforeANDafter">
+              <p class="troubleshooting_box_img_title">
+                Before - 닫기 누르면 바로 나가짐 (안내 없음)
+              </p>
+              <img
+                class="troubleshooting_box_img_pc"
+                src="img/png/walkypet4-1before.png"
+              />
+              <img
+                class="troubleshooting_box_img_mo"
+                src="img/png/M_walkypet4-1before.png"
+              />
+            </div>
+            <div class="troubleshooting_box_beforeANDafter">
+              <p class="troubleshooting_box_img_title">
+                After - 경고 팝업으로 실수 방지
+              </p>
+              <img
+                class="troubleshooting_box_img_pc"
+                src="img/png/walkypet4-1after.png"
+              />
+              <img
+                class="troubleshooting_box_img_mo"
+                src="img/png/M_walkypet4-1after.png"
+              />
+            </div>
+          </div>
+          <!-- 2) 산책 도중 찍은 사진 기록 상태 구분 UX -->
+          <div class="troubleshooting_box">
+            <h2>2) 산책 도중 찍은 사진 기록 상태 구분 UX</h2>
+            <div class="troubleshooting_inbox">
+              <ul>
+                <li>[문제]</li>
+                <li>1. '선택' 버튼만으로는 기록 방법이 헷갈림</li>
+                <li>2. 이미 기록된 사진과 새 사진 구분이 안 됨</li>
+              </ul>
+              <ul>
+                <li>[해결]</li>
+                <li>
+                  1. 갤러리 상단에 '선택한 사진만 기록됩니다' 안내 문구 배치
+                </li>
+                <li>
+                  2. '선택' 후 '기록하기'가 뜨던 2단계를, 진입 시 CTA 바로
+                  노출로 변경
+                </li>
+                <li>
+                  3. 사진을 업로드 시간순으로 구분하고, 이미 기록 완료된 이전
+                  사진은 비활성화 처리해 현재 장소에서 찍은 사진만 선택
+                  가능하도록 설계
+                </li>
+              </ul>
+              <ul>
+                <li>[결과]</li>
+                <li>
+                  1. 불필요한 단계를 줄여 선택부터 기록까지 더 빠르고 직관적으로
+                  이어짐
+                </li>
+                <li>
+                  2. 기록 가능한 사진과 이미 기록된 사진이 헷갈리지 않아 중복
+                  선택 방지
+                </li>
+                <li>
+                  3. 갤러리 형식 그대로 시간순 확인이 가능해 흐름이 자연스러움
+                </li>
+              </ul>
+            </div>
+            <div class="troubleshooting_box_beforeANDafter">
+              <p class="troubleshooting_box_img_title">
+                Before - 기록 흐름과 사진 구분이 불명확
+              </p>
+              <img
+                class="troubleshooting_box_img_pc"
+                src="img/png/walkypet4-2before.png"
+              />
+              <img
+                class="troubleshooting_box_img_mo"
+                src="img/png/M_walkypet4-2before.png"
+              />
+            </div>
+            <div class="troubleshooting_box_beforeANDafter">
+              <p class="troubleshooting_box_img_title">
+                After - 안내 문구와 함께 기록 흐름을 진입 즉시 제공
+              </p>
+              <img
+                class="troubleshooting_box_img_pc"
+                src="img/png/walkypet4-2after.png"
+              />
+              <img
+                class="troubleshooting_box_img_mo"
+                src="img/png/M_walkypet4-2after.png"
+              />
+            </div>
+          </div>
+          <!-- 3) 케어TIP 카드 이동 방식 -->
+          <div class="troubleshooting_box">
+            <h2>3) 케어TIP 카드 이동 방식</h2>
+            <div class="troubleshooting_inbox">
+              <ul>
+                <li>[문제]</li>
+                <li>
+                  1. 케어팁 카드를 눌렀을 때 외부 링크(인스타그램, 블로그 등)로
+                  바로 이동하면, 사용자가 앱을 이탈해 다시 돌아오지 않을 위험이
+                  있음
+                </li>
+              </ul>
+              <ul>
+                <li>[해결]</li>
+                <li>
+                  1. 카드 터치 시 외부 링크로 이동하지 않고, 앱 내에서 볼 수
+                  있는 페이지로 이동하도록 설계
+                </li>
+                <li>
+                  2. 노데이터 상태를 방지하기 위해 앱 출시 전 콘텐츠를 미리 몇
+                  가지 등록해두는 방식으로 준비
+                </li>
+              </ul>
+              <ul>
+                <li>[결과]</li>
+                <li>
+                  1. 사용자가 외부로 이탈하지 않고 앱 안에서 콘텐츠를 계속
+                  소비하게 되어, 체류 시간과 앱 내 활동을 유지할 수 있음
+                </li>
+              </ul>
+            </div>
+            <div class="troubleshooting_box_beforeANDafter">
+              <img
+                class="troubleshooting_box_img_pc"
+                src="img/png/walkypet4-3.png"
+              />
+              <img
+                class="troubleshooting_box_img_mo"
+                src="img/png/M_walkypet4-3.png"
+              />
+            </div>
+          </div>
+          <!-- 4) 산책 메인 안내 문구 다양화-->
+          <div class="troubleshooting_box" style="border-bottom: 0">
+            <h2>4) 산책 메인 안내 문구 다양화</h2>
+            <div class="troubleshooting_inbox">
+              <ul>
+                <li>[문제]</li>
+                <li>
+                  1. 산책 메인 화면의 안내 문구가 고정되어 있으면 반복 노출 시
+                  지루하게 느껴질 수 있음
+                </li>
+              </ul>
+              <ul>
+                <li>[해결]</li>
+                <li>
+                  1. 여러 개의 문구를 미리 정해두고, 상황이나 방문 시점마다 다른
+                  문구가 노출되도록 롤링 방식 적용
+                </li>
+              </ul>
+              <ul>
+                <li>[결과]</li>
+                <li>
+                  1. 여러 개의 문구를 미리 정해두고, 상황이나 방문 시점마다 다른
+                  문구가 노출되도록 롤링 방식 적용
+                </li>
+                <li style="color: #f46d6d">
+                  &nbsp;&nbsp;&nbsp;예) “오늘 산책 다녀왔어요, 또 가볼까요?” /
+                  “오늘도 함께 걸어볼까요?” 등
+                </li>
+              </ul>
+            </div>
+            <div class="troubleshooting_box_beforeANDafter">
+              <img
+                class="troubleshooting_box_img_pc"
+                src="img/png/walkypet4-4.png"
+              />
+              <img
+                class="troubleshooting_box_img_mo"
+                src="img/png/M_walkypet4-4.png"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="uiux_last">
+          <div class="uiux_last_text">
+            <p class="uiux_last_sub">다이어리</p>
+            <h1>우리 아이의 하루를 기록해요</h1>
+            <p class="uiux_last_text_p1">
+              날짜별로 오늘의 기분과 날씨, 사진까지 간편하게 남길 수 있어요.<br />여러
+              마리를 키운다면<br />반려동물을 한 번에 선택해 함께 기록할 수
+              있어요.
+            </p>
+            <p class="uiux_last_participation">Design & Planning 100%</p>
+          </div>
+          <div class="uiux_last_img">
+            <img class="uiux_last_img_pc" src="img/png/walkypetLastimg1.png" />
+            <img
+              class="uiux_last_img_mo"
+              src="img/png/M_walkypetLastimg1.png"
+            />
+          </div>
+        </div>
+
+        <div class="uiux_last" style="background-color: #f8f8f8">
+          <div class="uiux_last_text">
+            <p class="uiux_last_sub">커뮤니티</p>
+            <h1>반려인들의 이야기가 모이는 곳</h1>
+            <p class="uiux_last_text_p1">
+              펫친구, 펫케어, 펫챌린지까지<br />
+              한 곳에서 다양한 정보와 소통을 나눌 수 있어요.
+            </p>
+            <p class="uiux_last_participation">Design & Planning 100%</p>
+          </div>
+          <div class="uiux_last_img">
+            <img class="uiux_last_img_pc" src="img/png/walkypetLastimg2.png" />
+            <img
+              class="uiux_last_img_mo"
+              src="img/png/M_walkypetLastimg2.png"
+            />
+          </div>
+        </div>
+
+        <div class="uiux_last">
+          <div class="uiux_last_text">
+            <p class="uiux_last_sub">산책</p>
+            <h1>오늘도 함께, 산책 미션 완료!</h1>
+            <p class="uiux_last_text_p1">
+              오늘의 미션을 완료하면 포인트가 쌓이고,<br />
+              걸음 수, 시간, 거리와 산책 경로까지 자동으로 기록돼요.<br /><br />
+              산책 현황 캘린더에서 그동안의 기록을 한눈에 모아볼 수 있어요.
+            </p>
+            <p class="uiux_last_participation">Design & Planning by Teammate</p>
+          </div>
+          <div class="uiux_last_img">
+            <img class="uiux_last_img_pc" src="img/png/walkypetLastimg3.png" />
+            <img
+              class="uiux_last_img_mo"
+              src="img/png/M_walkypetLastimg3.png"
+            />
+          </div>
+        </div>
+
+        <div class="uiux_last" style="background-color: #f8f8f8">
+          <div class="uiux_last_text">
+            <p class="uiux_last_sub">일정</p>
+            <h1>우리 아이 일정, 한눈에 관리해요</h1>
+            <p class="uiux_last_text_p1">
+              카테고리를 선택해 간편하게 일정을 등록해요.<br /><br />
+              반복 설정으로 매일 챙겨야 할 루틴도 빠짐없이 기록하고, 여러 아이를
+              키운다면 함께 선택해 일정을 공유할 수 있어요.
+            </p>
+            <p class="uiux_last_participation">Design & Planning 100%</p>
+          </div>
+          <div class="uiux_last_img">
+            <img class="uiux_last_img_pc" src="img/png/walkypetLastimg4.png" />
+            <img
+              class="uiux_last_img_mo"
+              src="img/png/M_walkypetLastimg4.png"
+            />
+          </div>
+        </div>
+
+        <div class="main_back_box">
+          <a href="index.html">
+            <span class="main_back_box_arrow">←</span>
+            <span class="main_back_box_text">포트폴리오 메인으로 돌아가기</span>
+          </a>
+        </div>
+      </div>
+
+            <div class="flip-section work-section">
+        <div id="uiuxflip" class="uiux_main">
+          <div class="uiux_main_text">
+            <div class="uiux_main_text_logo">
+              <img src="img/png/walkypet_logo.png" alt="앱아이콘" />
+              <div>Team Project</div>
+            </div>
+            <h1>
+              열공열공열공서!<br />포인트까지 쌓는 반려
+              필수 앱
+            </h1>
+            <p class="uiux_main_text_p1">
+              기획부터 UI 디자인까지 참여한 반려동물 산책 서비스
+            </p>
+            <p class="uiux_main_text_p2">Figma | 참여도 60% | 제작기간 2개월</p>
+          </div>
+          <div class="uiux_main_img">
+            <img class="uiux_main_img_pc" src="img/png/walkypet_main.png" />
+            <img class="uiux_main_img_mo" src="img/png/walkypet_main_M.png" />
+          </div>
+        </div>
+
+        <div class="project_goal uiux_content_section">
+          <h1>#1. 프로젝트 목표</h1>
+          <div class="project_goal_box">
+            <!-- 산책 동기부여 -->
+            <div class="project_goal_inbox">
+              <img
+                src="img/png/walkypetcomponent1.png"
+                alt="산책 동기부여 아이콘"
+              />
+              <h2>산책 동기부여</h2>
+              <p>포인트와 챌린지로 꾸준한 산책 습관을 유도하는 설계</p>
+            </div>
+            <!-- 기록의 즐거움 -->
+            <div class="project_goal_inbox">
+              <img
+                src="img/png/walkypetcomponent2.png"
+                alt="산책 동기부여 아이콘"
+              />
+              <h2>기록의 즐거움</h2>
+              <p>사진과 타임라인으로 산책 기록을 감성적으로 보여주는 UI</p>
+            </div>
+            <!-- 유대감 있는 커뮤니티 -->
+            <div class="project_goal_inbox">
+              <img
+                src="img/png/walkypetcomponent3.png"
+                alt="산책 동기부여 아이콘"
+              />
+              <h2>유대감 있는 커뮤니티</h2>
+              <p>같은 반려인들과 다양한 주제로 소통할 수 있는 공간 설계</p>
+            </div>
+            <!-- 이동 중에도 쉬운 조작 -->
+            <div class="project_goal_inbox">
+              <img
+                src="img/png/walkypetcomponent4.png"
+                alt="산책 동기부여 아이콘"
+              />
+              <h2>이동 중에도 쉬운 조작</h2>
+              <p>반려견 산책 중 한 손으로도 조작 가능한 직관적인 인터페이스</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="design_guide uiux_content_section">
+          <h1>#2. 디자인 가이드</h1>
+          <!-- 브랜드 컬러 -->
+          <div class="design_guide_box">
+            <h2>브랜드 컬러</h2>
+            <div class="design_guide_row">
+              <!-- 메인 컬러 -->
+              <div class="design_guide_inbox">
+                <div
+                  class="design_guide_inbox_color"
+                  style="background-color: #ff8c93"
+                ></div>
+                <div class="design_guide_inbox_text">
+                  <p class="design_guide_inbox_text_top">메인 컬러</p>
+                  <p class="design_guide_inbox_text_bot">#FF8C93</p>
+                </div>
+              </div>
+              <!-- 본문 텍스트 -->
+              <div class="design_guide_inbox">
+                <div
+                  class="design_guide_inbox_color"
+                  style="background-color: #313131"
+                ></div>
+                <div class="design_guide_inbox_text">
+                  <p class="design_guide_inbox_text_top">본문 텍스트</p>
+                  <p class="design_guide_inbox_text_bot">#313131</p>
+                </div>
+              </div>
+              <!-- 보조 텍스트 -->
+              <div class="design_guide_inbox">
+                <div
+                  class="design_guide_inbox_color"
+                  style="background-color: #555555"
+                ></div>
+                <div class="design_guide_inbox_text">
+                  <p class="design_guide_inbox_text_top">보조 텍스트</p>
+                  <p class="design_guide_inbox_text_bot">#555555</p>
+                </div>
+              </div>
+              <!-- 모달 보조 텍스트-->
+              <div class="design_guide_inbox">
+                <div
+                  class="design_guide_inbox_color"
+                  style="background-color: #808080"
+                ></div>
+                <div class="design_guide_inbox_text">
+                  <p class="design_guide_inbox_text_top">모달 보조 텍스트</p>
+                  <p class="design_guide_inbox_text_bot">#808080</p>
+                </div>
+              </div>
+              <!-- 배경 -->
+              <div class="design_guide_inbox">
+                <div
+                  class="design_guide_inbox_color"
+                  style="background-color: #f8f8f8; border: 1px solid #d0d0d0"
+                ></div>
+                <div class="design_guide_inbox_text">
+                  <p class="design_guide_inbox_text_top">배경</p>
+                  <p class="design_guide_inbox_text_bot">#F8F8F8</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 시스템 컬러 -->
+          <div class="design_guide_box">
+            <h2 style="padding-bottom: 0">시스템 컬러</h2>
+            <span style="padding-bottom: 2rem"
+              >커뮤니티 내 카테고리 구분용</span
+            >
+            <div class="design_guide_row">
+              <!-- 일상 -->
+              <div class="design_guide_inbox">
+                <div
+                  class="design_guide_inbox_color"
+                  style="background-color: #ed8a8a"
+                ></div>
+                <div class="design_guide_inbox_text">
+                  <p class="design_guide_inbox_text_top">일상</p>
+                  <p class="design_guide_inbox_text_bot">#ED8A8A</p>
+                </div>
+              </div>
+              <!-- 질문있어요 -->
+              <div class="design_guide_inbox">
+                <div
+                  class="design_guide_inbox_color"
+                  style="background-color: #81a2cd"
+                ></div>
+                <div class="design_guide_inbox_text">
+                  <p class="design_guide_inbox_text_top">질문있어요</p>
+                  <p class="design_guide_inbox_text_bot">#81A2CD</p>
+                </div>
+              </div>
+              <!-- 건강 -->
+              <div class="design_guide_inbox">
+                <div
+                  class="design_guide_inbox_color"
+                  style="background-color: #f9a657"
+                ></div>
+                <div class="design_guide_inbox_text">
+                  <p class="design_guide_inbox_text_top">건강</p>
+                  <p class="design_guide_inbox_text_bot">#F9A657</p>
+                </div>
+              </div>
+              <!-- 후기-->
+              <div class="design_guide_inbox">
+                <div
+                  class="design_guide_inbox_color"
+                  style="background-color: #9dcd74"
+                ></div>
+                <div class="design_guide_inbox_text">
+                  <p class="design_guide_inbox_text_top">후기</p>
+                  <p class="design_guide_inbox_text_bot">#9DCD74</p>
+                </div>
+              </div>
+              <!-- 정보공유 -->
+              <div class="design_guide_inbox">
+                <div
+                  class="design_guide_inbox_color"
+                  style="background-color: #a48cd9"
+                ></div>
+                <div class="design_guide_inbox_text">
+                  <p class="design_guide_inbox_text_top">정보공유</p>
+                  <p class="design_guide_inbox_text_bot">#A48CD9</p>
+                </div>
+              </div>
+              <!-- 긴급 -->
+              <div class="design_guide_inbox">
+                <div
+                  class="design_guide_inbox_color"
+                  style="background-color: #f46d6d"
+                ></div>
+                <div class="design_guide_inbox_text">
+                  <p class="design_guide_inbox_text_top">긴급</p>
+                  <p class="design_guide_inbox_text_bot">#F46D6D</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 폰트 -->
+          <div
+            class="design_guide_box"
+            style="border-bottom: 0; padding-bottom: 0"
+          >
+            <h2 style="padding-bottom: 0">폰트</h2>
+            <p class="design_guide_box_font_title">
+              가나다&nbsp;&nbsp;&nbsp;ABC
+            </p>
+            <p class="design_guide_box_font_sub">Pretendard</p>
+            <ul>
+              <li>Regular</li>
+              <li>Medium</li>
+              <li>SemiBold</li>
+              <li>Bold</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="menu_structure uiux_content_section">
+          <h1>#3. 메뉴 구조</h1>
+          <div class="menu_structure_row">
+            <div class="menu_structure_label">다이어리</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">기록 작성</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">년도/월 표시</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">월간 갤러리 뷰</div>
+          </div>
+          <div class="menu_structure_row">
+            <div class="menu_structure_label">커뮤니티</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">펫친구</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">펫케어</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">펫챌린지</div>
+          </div>
+          <div class="menu_structure_row">
+            <div class="menu_structure_label">산책</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">산책 시작</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">산책 진행</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">산책 기록</div>
+          </div>
+          <div class="menu_structure_row">
+            <div class="menu_structure_label">일정</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">일정 추가</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">날씨</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">캘린더 뷰</div>
+          </div>
+          <div class="menu_structure_row">
+            <div class="menu_structure_label">마이</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">내 포인트</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">정보 수정</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">산책 목표 설정</div>
+          </div>
+        </div>
+
+        <div class="troubleshooting uiux_content_section">
+          <h1>#4. 트러블슈팅 & 의사결정 과정</h1>
+          <!-- 1) 사진 기록 이탈 방지 UX -->
+          <div class="troubleshooting_box">
+            <h2>1) 사진 기록 이탈 방지 UX</h2>
+            <div class="troubleshooting_inbox">
+              <ul>
+                <li>[문제]</li>
+                <li>
+                  1. 산책 중 사진을 찍고 기록 없이 닫으면 자동 삭제되는데,
+                  사용자가 이를 모른 채 닫기를 눌러 사진을 잃을 수 있음
+                </li>
+              </ul>
+              <ul>
+                <li>[해결]</li>
+                <li>
+                  1. 닫기 시 ‘기록하지 않으면 사진이 사라집니다. 정말 닫을까요?’
+                  경고 팝업 노출 → 취소 시 복귀, 닫기 시 이탈
+                </li>
+              </ul>
+              <ul>
+                <li>[결과]</li>
+                <li>
+                  1. 기존 삭제 정책은 유지하면서도, 사용자가 실수로 사진을 잃는
+                  상황을 방지함
+                </li>
+              </ul>
+            </div>
+            <div class="troubleshooting_box_beforeANDafter">
+              <p class="troubleshooting_box_img_title">
+                Before - 닫기 누르면 바로 나가짐 (안내 없음)
+              </p>
+              <img
+                class="troubleshooting_box_img_pc"
+                src="img/png/walkypet4-1before.png"
+              />
+              <img
+                class="troubleshooting_box_img_mo"
+                src="img/png/M_walkypet4-1before.png"
+              />
+            </div>
+            <div class="troubleshooting_box_beforeANDafter">
+              <p class="troubleshooting_box_img_title">
+                After - 경고 팝업으로 실수 방지
+              </p>
+              <img
+                class="troubleshooting_box_img_pc"
+                src="img/png/walkypet4-1after.png"
+              />
+              <img
+                class="troubleshooting_box_img_mo"
+                src="img/png/M_walkypet4-1after.png"
+              />
+            </div>
+          </div>
+          <!-- 2) 산책 도중 찍은 사진 기록 상태 구분 UX -->
+          <div class="troubleshooting_box">
+            <h2>2) 산책 도중 찍은 사진 기록 상태 구분 UX</h2>
+            <div class="troubleshooting_inbox">
+              <ul>
+                <li>[문제]</li>
+                <li>1. '선택' 버튼만으로는 기록 방법이 헷갈림</li>
+                <li>2. 이미 기록된 사진과 새 사진 구분이 안 됨</li>
+              </ul>
+              <ul>
+                <li>[해결]</li>
+                <li>
+                  1. 갤러리 상단에 '선택한 사진만 기록됩니다' 안내 문구 배치
+                </li>
+                <li>
+                  2. '선택' 후 '기록하기'가 뜨던 2단계를, 진입 시 CTA 바로
+                  노출로 변경
+                </li>
+                <li>
+                  3. 사진을 업로드 시간순으로 구분하고, 이미 기록 완료된 이전
+                  사진은 비활성화 처리해 현재 장소에서 찍은 사진만 선택
+                  가능하도록 설계
+                </li>
+              </ul>
+              <ul>
+                <li>[결과]</li>
+                <li>
+                  1. 불필요한 단계를 줄여 선택부터 기록까지 더 빠르고 직관적으로
+                  이어짐
+                </li>
+                <li>
+                  2. 기록 가능한 사진과 이미 기록된 사진이 헷갈리지 않아 중복
+                  선택 방지
+                </li>
+                <li>
+                  3. 갤러리 형식 그대로 시간순 확인이 가능해 흐름이 자연스러움
+                </li>
+              </ul>
+            </div>
+            <div class="troubleshooting_box_beforeANDafter">
+              <p class="troubleshooting_box_img_title">
+                Before - 기록 흐름과 사진 구분이 불명확
+              </p>
+              <img
+                class="troubleshooting_box_img_pc"
+                src="img/png/walkypet4-2before.png"
+              />
+              <img
+                class="troubleshooting_box_img_mo"
+                src="img/png/M_walkypet4-2before.png"
+              />
+            </div>
+            <div class="troubleshooting_box_beforeANDafter">
+              <p class="troubleshooting_box_img_title">
+                After - 안내 문구와 함께 기록 흐름을 진입 즉시 제공
+              </p>
+              <img
+                class="troubleshooting_box_img_pc"
+                src="img/png/walkypet4-2after.png"
+              />
+              <img
+                class="troubleshooting_box_img_mo"
+                src="img/png/M_walkypet4-2after.png"
+              />
+            </div>
+          </div>
+          <!-- 3) 케어TIP 카드 이동 방식 -->
+          <div class="troubleshooting_box">
+            <h2>3) 케어TIP 카드 이동 방식</h2>
+            <div class="troubleshooting_inbox">
+              <ul>
+                <li>[문제]</li>
+                <li>
+                  1. 케어팁 카드를 눌렀을 때 외부 링크(인스타그램, 블로그 등)로
+                  바로 이동하면, 사용자가 앱을 이탈해 다시 돌아오지 않을 위험이
+                  있음
+                </li>
+              </ul>
+              <ul>
+                <li>[해결]</li>
+                <li>
+                  1. 카드 터치 시 외부 링크로 이동하지 않고, 앱 내에서 볼 수
+                  있는 페이지로 이동하도록 설계
+                </li>
+                <li>
+                  2. 노데이터 상태를 방지하기 위해 앱 출시 전 콘텐츠를 미리 몇
+                  가지 등록해두는 방식으로 준비
+                </li>
+              </ul>
+              <ul>
+                <li>[결과]</li>
+                <li>
+                  1. 사용자가 외부로 이탈하지 않고 앱 안에서 콘텐츠를 계속
+                  소비하게 되어, 체류 시간과 앱 내 활동을 유지할 수 있음
+                </li>
+              </ul>
+            </div>
+            <div class="troubleshooting_box_beforeANDafter">
+              <img
+                class="troubleshooting_box_img_pc"
+                src="img/png/walkypet4-3.png"
+              />
+              <img
+                class="troubleshooting_box_img_mo"
+                src="img/png/M_walkypet4-3.png"
+              />
+            </div>
+          </div>
+          <!-- 4) 산책 메인 안내 문구 다양화-->
+          <div class="troubleshooting_box" style="border-bottom: 0">
+            <h2>4) 산책 메인 안내 문구 다양화</h2>
+            <div class="troubleshooting_inbox">
+              <ul>
+                <li>[문제]</li>
+                <li>
+                  1. 산책 메인 화면의 안내 문구가 고정되어 있으면 반복 노출 시
+                  지루하게 느껴질 수 있음
+                </li>
+              </ul>
+              <ul>
+                <li>[해결]</li>
+                <li>
+                  1. 여러 개의 문구를 미리 정해두고, 상황이나 방문 시점마다 다른
+                  문구가 노출되도록 롤링 방식 적용
+                </li>
+              </ul>
+              <ul>
+                <li>[결과]</li>
+                <li>
+                  1. 여러 개의 문구를 미리 정해두고, 상황이나 방문 시점마다 다른
+                  문구가 노출되도록 롤링 방식 적용
+                </li>
+                <li style="color: #f46d6d">
+                  &nbsp;&nbsp;&nbsp;예) “오늘 산책 다녀왔어요, 또 가볼까요?” /
+                  “오늘도 함께 걸어볼까요?” 등
+                </li>
+              </ul>
+            </div>
+            <div class="troubleshooting_box_beforeANDafter">
+              <img
+                class="troubleshooting_box_img_pc"
+                src="img/png/walkypet4-4.png"
+              />
+              <img
+                class="troubleshooting_box_img_mo"
+                src="img/png/M_walkypet4-4.png"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="uiux_last">
+          <div class="uiux_last_text">
+            <p class="uiux_last_sub">다이어리</p>
+            <h1>우리 아이의 하루를 기록해요</h1>
+            <p class="uiux_last_text_p1">
+              날짜별로 오늘의 기분과 날씨, 사진까지 간편하게 남길 수 있어요.<br />여러
+              마리를 키운다면<br />반려동물을 한 번에 선택해 함께 기록할 수
+              있어요.
+            </p>
+            <p class="uiux_last_participation">Design & Planning 100%</p>
+          </div>
+          <div class="uiux_last_img">
+            <img class="uiux_last_img_pc" src="img/png/walkypetLastimg1.png" />
+            <img
+              class="uiux_last_img_mo"
+              src="img/png/M_walkypetLastimg1.png"
+            />
+          </div>
+        </div>
+
+        <div class="uiux_last" style="background-color: #f8f8f8">
+          <div class="uiux_last_text">
+            <p class="uiux_last_sub">커뮤니티</p>
+            <h1>반려인들의 이야기가 모이는 곳</h1>
+            <p class="uiux_last_text_p1">
+              펫친구, 펫케어, 펫챌린지까지<br />
+              한 곳에서 다양한 정보와 소통을 나눌 수 있어요.
+            </p>
+            <p class="uiux_last_participation">Design & Planning 100%</p>
+          </div>
+          <div class="uiux_last_img">
+            <img class="uiux_last_img_pc" src="img/png/walkypetLastimg2.png" />
+            <img
+              class="uiux_last_img_mo"
+              src="img/png/M_walkypetLastimg2.png"
+            />
+          </div>
+        </div>
+
+        <div class="uiux_last">
+          <div class="uiux_last_text">
+            <p class="uiux_last_sub">산책</p>
+            <h1>오늘도 함께, 산책 미션 완료!</h1>
+            <p class="uiux_last_text_p1">
+              오늘의 미션을 완료하면 포인트가 쌓이고,<br />
+              걸음 수, 시간, 거리와 산책 경로까지 자동으로 기록돼요.<br /><br />
+              산책 현황 캘린더에서 그동안의 기록을 한눈에 모아볼 수 있어요.
+            </p>
+            <p class="uiux_last_participation">Design & Planning by Teammate</p>
+          </div>
+          <div class="uiux_last_img">
+            <img class="uiux_last_img_pc" src="img/png/walkypetLastimg3.png" />
+            <img
+              class="uiux_last_img_mo"
+              src="img/png/M_walkypetLastimg3.png"
+            />
+          </div>
+        </div>
+
+        <div class="uiux_last" style="background-color: #f8f8f8">
+          <div class="uiux_last_text">
+            <p class="uiux_last_sub">일정</p>
+            <h1>우리 아이 일정, 한눈에 관리해요</h1>
+            <p class="uiux_last_text_p1">
+              카테고리를 선택해 간편하게 일정을 등록해요.<br /><br />
+              반복 설정으로 매일 챙겨야 할 루틴도 빠짐없이 기록하고, 여러 아이를
+              키운다면 함께 선택해 일정을 공유할 수 있어요.
+            </p>
+            <p class="uiux_last_participation">Design & Planning 100%</p>
+          </div>
+          <div class="uiux_last_img">
+            <img class="uiux_last_img_pc" src="img/png/walkypetLastimg4.png" />
+            <img
+              class="uiux_last_img_mo"
+              src="img/png/M_walkypetLastimg4.png"
+            />
+          </div>
+        </div>
+
+        <div class="main_back_box">
+          <a href="index.html">
+            <span class="main_back_box_arrow">←</span>
+            <span class="main_back_box_text">포트폴리오 메인으로 돌아가기</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="flip-section work-section"></div>
+    </div>
+
+    <script>
+      const links = document.querySelectorAll(".nav-link");
+
+      // 네비 href
+      const tabs = {
+        "#uiuxwalkypet": ".walkypet-section",
+        "#uiuxgtimer": ".gtimer-section",
+        "#uiuxflip": ".flip-section",
+      };
+
+      // 선택한 탭만 보이게
+      function showTab(hash) {
+        if (!tabs[hash]) hash = "#uiuxwalkypet";
+
+        // 섹션 보이기/숨기기
+        Object.entries(tabs).forEach(([key, selector]) => {
+          const section = document.querySelector(selector);
+          if (!section) return;
+          section.style.display = key === hash ? "" : "none";
+        });
+
+        // 네비 active 표시
+        links.forEach((link) => {
+          link.classList.toggle("active", link.getAttribute("href") === hash);
+        });
+
+        window.scrollTo({ top: 0, behavior: "instant" });
+      }
+
+      // 네비 클릭
+      links.forEach((link) => {
+        link.addEventListener("click", (e) => {
+          e.preventDefault();
+          const hash = link.getAttribute("href");
+          showTab(hash);
+          history.replaceState(null, "", hash);
+        });
+      });
+
+      // 최초 실행
+      showTab(location.hash);
+    </script>
+  </body>
+</html>
