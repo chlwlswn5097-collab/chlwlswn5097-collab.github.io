@@ -1,0 +1,27 @@
+.contact-class {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 30px;
+  background-color: #3d5f5a;
+}
+.contact-class h3 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+/* 모바일 미디어 쿼리 */
+@media (max-width: 580px) {
+  .contact-class h3 {
+    font-size: 1.6rem;
+  }
+
+  .contact-class {
+    row-gap: 20px;
+  }
+  .contact-class a,
+  .contact-class p {
+    font-size: 1.4rem;
+  }
+}
