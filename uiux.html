@@ -1,0 +1,1944 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>uiux</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/uiux.css" />
+    <!-- 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrap work-page">
+      <a href="index.html" class="nav-back">
+        <span class="arrow">←</span>
+      </a>
+
+      <nav>
+        <a
+          href="#uiuxwalkypet"
+          class="nav-link active"
+          data-target="walkypet-section"
+          >Walky Pet</a
+        >
+        <a href="#uiuxgtimer" class="nav-link" data-target="gtimer-section"
+          >G-Timer</a
+        >
+        <a href="#uiuxflip" class="nav-link" data-target="flip-section"
+          >열공시간</a
+        >
+      </nav>
+
+      <div class="walkypet-section work-section active">
+        <div id="uiuxwalkypet" class="uiux_main">
+          <div class="uiux_main_text">
+            <div class="uiux_main_text_logo">
+              <img src="img/png/walkypet_logo.png" alt="앱아이콘" />
+              <div class="waklypet_bg_color">Team Project</div>
+            </div>
+            <h1>
+              강아지와의 산책·기록·챌린지를 한 앱에서!<br />포인트까지 쌓는 반려
+              필수 앱
+            </h1>
+            <p class="uiux_main_text_p1">
+              기획부터 UI 디자인까지 참여한 반려동물 산책 서비스
+            </p>
+            <p class="uiux_main_text_p2">Figma | 참여도 60% | 제작기간 2개월</p>
+          </div>
+          <div class="uiux_main_img">
+            <img class="uiux_main_img_pc" src="img/png/walkypet_main.png" />
+            <img class="uiux_main_img_mo" src="img/png/walkypet_main_M.png" />
+          </div>
+        </div>
+
+        <div class="project_goal uiux_content_section">
+          <h1 class="waklypet_color">#1. 프로젝트 목표</h1>
+          <div class="project_goal_box">
+            <!-- 산책 동기부여 -->
+            <div class="project_goal_inbox">
+              <img
+                src="img/png/walkypetcomponent1.png"
+                alt="산책 동기부여 아이콘"
+              />
+              <h2>산책 동기부여</h2>
+              <p>포인트와 챌린지로 꾸준한 산책 습관을 유도하는 설계</p>
+            </div>
+            <!-- 기록의 즐거움 -->
+            <div class="project_goal_inbox">
+              <img
+                src="img/png/walkypetcomponent2.png"
+                alt="기록의 즐거움 아이콘"
+              />
+              <h2>기록의 즐거움</h2>
+              <p>사진과 타임라인으로 산책 기록을 감성적으로 보여주는 UI</p>
+            </div>
+            <!-- 유대감 있는 커뮤니티 -->
+            <div class="project_goal_inbox">
+              <img
+                src="img/png/walkypetcomponent3.png"
+                alt="유대감 있는 커뮤니티 아이콘"
+              />
+              <h2>유대감 있는 커뮤니티</h2>
+              <p>같은 반려인들과 다양한 주제로 소통할 수 있는 공간 설계</p>
+            </div>
+            <!-- 이동 중에도 쉬운 조작 -->
+            <div class="project_goal_inbox">
+              <img
+                src="img/png/walkypetcomponent4.png"
+                alt="이동 중에도 쉬운 조작 아이콘"
+              />
+              <h2>이동 중에도 쉬운 조작</h2>
+              <p>반려견 산책 중 한 손으로도 조작 가능한 직관적인 인터페이스</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="design_guide uiux_content_section">
+          <h1 class="waklypet_color">#2. 디자인 가이드</h1>
+          <!-- 브랜드 컬러 -->
+          <div class="design_guide_box">
+            <h2>브랜드 컬러</h2>
+            <div class="design_guide_row">
+              <!-- 메인 컬러 -->
+              <div class="design_guide_inbox">
+                <div
+                  class="design_guide_inbox_color"
+                  style="background-color: #ff8c93"
+                ></div>
+                <div class="design_guide_inbox_text">
+                  <p class="design_guide_inbox_text_top">메인 컬러</p>
+                  <p class="design_guide_inbox_text_bot">#FF8C93</p>
+                </div>
+              </div>
+              <!-- 본문 텍스트 -->
+              <div class="design_guide_inbox">
+                <div
+                  class="design_guide_inbox_color"
+                  style="background-color: #313131"
+                ></div>
+                <div class="design_guide_inbox_text">
+                  <p class="design_guide_inbox_text_top">본문 텍스트</p>
+                  <p class="design_guide_inbox_text_bot">#313131</p>
+                </div>
+              </div>
+              <!-- 보조 텍스트 -->
+              <div class="design_guide_inbox">
+                <div
+                  class="design_guide_inbox_color"
+                  style="background-color: #555555"
+                ></div>
+                <div class="design_guide_inbox_text">
+                  <p class="design_guide_inbox_text_top">보조 텍스트</p>
+                  <p class="design_guide_inbox_text_bot">#555555</p>
+                </div>
+              </div>
+              <!-- 모달 보조 텍스트-->
+              <div class="design_guide_inbox">
+                <div
+                  class="design_guide_inbox_color"
+                  style="background-color: #808080"
+                ></div>
+                <div class="design_guide_inbox_text">
+                  <p class="design_guide_inbox_text_top">모달 보조 텍스트</p>
+                  <p class="design_guide_inbox_text_bot">#808080</p>
+                </div>
+              </div>
+              <!-- 배경 -->
+              <div class="design_guide_inbox">
+                <div
+                  class="design_guide_inbox_color"
+                  style="
+                    background-color: #f8f8f8;
+                    border-bottom: 1px solid #d0d0d0;
+                  "
+                ></div>
+                <div class="design_guide_inbox_text">
+                  <p class="design_guide_inbox_text_top">배경</p>
+                  <p class="design_guide_inbox_text_bot">#F8F8F8</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 시스템 컬러 -->
+          <div class="design_guide_box">
+            <h2 style="padding-bottom: 0">시스템 컬러</h2>
+            <span style="padding-bottom: 2rem"
+              >커뮤니티 내 카테고리 구분용</span
+            >
+            <div class="design_guide_row">
+              <!-- 일상 -->
+              <div class="design_guide_inbox">
+                <div
+                  class="design_guide_inbox_color"
+                  style="background-color: #ed8a8a"
+                ></div>
+                <div class="design_guide_inbox_text">
+                  <p class="design_guide_inbox_text_top">일상</p>
+                  <p class="design_guide_inbox_text_bot">#ED8A8A</p>
+                </div>
+              </div>
+              <!-- 질문있어요 -->
+              <div class="design_guide_inbox">
+                <div
+                  class="design_guide_inbox_color"
+                  style="background-color: #81a2cd"
+                ></div>
+                <div class="design_guide_inbox_text">
+                  <p class="design_guide_inbox_text_top">질문있어요</p>
+                  <p class="design_guide_inbox_text_bot">#81A2CD</p>
+                </div>
+              </div>
+              <!-- 건강 -->
+              <div class="design_guide_inbox">
+                <div
+                  class="design_guide_inbox_color"
+                  style="background-color: #f9a657"
+                ></div>
+                <div class="design_guide_inbox_text">
+                  <p class="design_guide_inbox_text_top">건강</p>
+                  <p class="design_guide_inbox_text_bot">#F9A657</p>
+                </div>
+              </div>
+              <!-- 후기-->
+              <div class="design_guide_inbox">
+                <div
+                  class="design_guide_inbox_color"
+                  style="background-color: #9dcd74"
+                ></div>
+                <div class="design_guide_inbox_text">
+                  <p class="design_guide_inbox_text_top">후기</p>
+                  <p class="design_guide_inbox_text_bot">#9DCD74</p>
+                </div>
+              </div>
+              <!-- 정보공유 -->
+              <div class="design_guide_inbox">
+                <div
+                  class="design_guide_inbox_color"
+                  style="background-color: #a48cd9"
+                ></div>
+                <div class="design_guide_inbox_text">
+                  <p class="design_guide_inbox_text_top">정보공유</p>
+                  <p class="design_guide_inbox_text_bot">#A48CD9</p>
+                </div>
+              </div>
+              <!-- 긴급 -->
+              <div class="design_guide_inbox">
+                <div
+                  class="design_guide_inbox_color"
+                  style="background-color: #f46d6d"
+                ></div>
+                <div class="design_guide_inbox_text">
+                  <p class="design_guide_inbox_text_top">긴급</p>
+                  <p class="design_guide_inbox_text_bot">#F46D6D</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 폰트 -->
+          <div
+            class="design_guide_box"
+            style="border-bottom: 0; padding-bottom: 0"
+          >
+            <h2 style="padding-bottom: 0">폰트</h2>
+            <p class="design_guide_box_font_title">
+              가나다&nbsp;&nbsp;&nbsp;ABC
+            </p>
+            <p class="design_guide_box_font_sub">Pretendard</p>
+            <ul>
+              <li>Regular</li>
+              <li>Medium</li>
+              <li>SemiBold</li>
+              <li>Bold</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="menu_structure uiux_content_section">
+          <h1 class="waklypet_color">#3. 메뉴 구조</h1>
+          <div class="menu_structure_row">
+            <div class="menu_structure_label">다이어리</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">기록 작성</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">년도/월 표시</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">월간 갤러리 뷰</div>
+          </div>
+          <div class="menu_structure_row">
+            <div class="menu_structure_label">커뮤니티</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">펫친구</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">펫케어</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">펫챌린지</div>
+          </div>
+          <div class="menu_structure_row">
+            <div class="menu_structure_label">산책</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">산책 시작</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">산책 진행</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">산책 기록</div>
+          </div>
+          <div class="menu_structure_row">
+            <div class="menu_structure_label">일정</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">일정 추가</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">날씨</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">캘린더 뷰</div>
+          </div>
+          <div class="menu_structure_row">
+            <div class="menu_structure_label">마이</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">내 포인트</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">정보 수정</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">산책 목표 설정</div>
+          </div>
+        </div>
+
+        <div class="troubleshooting uiux_content_section">
+          <h1 class="waklypet_color">#4. 트러블슈팅 & 의사결정 과정</h1>
+          <!-- 1) 사진 기록 이탈 방지 UX -->
+          <div class="troubleshooting_box">
+            <h2>1) 사진 기록 이탈 방지 UX</h2>
+            <div class="troubleshooting_inbox">
+              <ul>
+                <li>[문제]</li>
+                <li>
+                  1. 산책 중 사진을 찍고 기록 없이 닫으면 자동 삭제되는데,
+                  사용자가 이를 모른 채 닫기를 눌러 사진을 잃을 수 있음
+                </li>
+              </ul>
+              <ul>
+                <li>[해결]</li>
+                <li>
+                  1. 닫기 시 ‘기록하지 않으면 사진이 사라집니다. 정말 닫을까요?’
+                  경고 팝업 노출 → 취소 시 복귀, 닫기 시 이탈
+                </li>
+              </ul>
+              <ul>
+                <li>[결과]</li>
+                <li>
+                  1. 기존 삭제 정책은 유지하면서도, 사용자가 실수로 사진을 잃는
+                  상황을 방지함
+                </li>
+              </ul>
+            </div>
+            <div class="troubleshooting_box_beforeANDafter">
+              <p class="troubleshooting_box_img_title">
+                Before - 닫기 누르면 바로 나가짐 (안내 없음)
+              </p>
+              <img
+                class="troubleshooting_box_img_pc"
+                src="img/png/walkypet4-1before.png"
+              />
+              <img
+                class="troubleshooting_box_img_mo"
+                src="img/png/M_walkypet4-1before.png"
+              />
+            </div>
+            <div class="troubleshooting_box_beforeANDafter">
+              <p class="troubleshooting_box_img_title">
+                After - 경고 팝업으로 실수 방지
+              </p>
+              <img
+                class="troubleshooting_box_img_pc"
+                src="img/png/walkypet4-1after.png"
+              />
+              <img
+                class="troubleshooting_box_img_mo"
+                src="img/png/M_walkypet4-1after.png"
+              />
+            </div>
+          </div>
+          <!-- 2) 산책 도중 찍은 사진 기록 상태 구분 UX -->
+          <div class="troubleshooting_box">
+            <h2>2) 산책 도중 찍은 사진 기록 상태 구분 UX</h2>
+            <div class="troubleshooting_inbox">
+              <ul>
+                <li>[문제]</li>
+                <li>1. '선택' 버튼만으로는 기록 방법이 헷갈림</li>
+                <li>2. 이미 기록된 사진과 새 사진 구분이 안 됨</li>
+              </ul>
+              <ul>
+                <li>[해결]</li>
+                <li>
+                  1. 갤러리 상단에 '선택한 사진만 기록됩니다' 안내 문구 배치
+                </li>
+                <li>
+                  2. '선택' 후 '기록하기'가 뜨던 2단계를, 진입 시 CTA 바로
+                  노출로 변경
+                </li>
+                <li>
+                  3. 사진을 업로드 시간순으로 구분하고, 이미 기록 완료된 이전
+                  사진은 비활성화 처리해 현재 장소에서 찍은 사진만 선택
+                  가능하도록 설계
+                </li>
+              </ul>
+              <ul>
+                <li>[결과]</li>
+                <li>
+                  1. 불필요한 단계를 줄여 선택부터 기록까지 더 빠르고 직관적으로
+                  이어짐
+                </li>
+                <li>
+                  2. 기록 가능한 사진과 이미 기록된 사진이 헷갈리지 않아 중복
+                  선택 방지
+                </li>
+                <li>
+                  3. 갤러리 형식 그대로 시간순 확인이 가능해 흐름이 자연스러움
+                </li>
+              </ul>
+            </div>
+            <div class="troubleshooting_box_beforeANDafter">
+              <p class="troubleshooting_box_img_title">
+                Before - 기록 흐름과 사진 구분이 불명확
+              </p>
+              <img
+                class="troubleshooting_box_img_pc"
+                src="img/png/walkypet4-2before.png"
+              />
+              <img
+                class="troubleshooting_box_img_mo"
+                src="img/png/M_walkypet4-2before.png"
+              />
+            </div>
+            <div class="troubleshooting_box_beforeANDafter">
+              <p class="troubleshooting_box_img_title">
+                After - 안내 문구와 함께 기록 흐름을 진입 즉시 제공
+              </p>
+              <img
+                class="troubleshooting_box_img_pc"
+                src="img/png/walkypet4-2after.png"
+              />
+              <img
+                class="troubleshooting_box_img_mo"
+                src="img/png/M_walkypet4-2after.png"
+              />
+            </div>
+          </div>
+          <!-- 3) 케어TIP 카드 이동 방식 -->
+          <div class="troubleshooting_box">
+            <h2>3) 케어TIP 카드 이동 방식</h2>
+            <div class="troubleshooting_inbox">
+              <ul>
+                <li>[문제]</li>
+                <li>
+                  1. 케어팁 카드를 눌렀을 때 외부 링크(인스타그램, 블로그 등)로
+                  바로 이동하면, 사용자가 앱을 이탈해 다시 돌아오지 않을 위험이
+                  있음
+                </li>
+              </ul>
+              <ul>
+                <li>[해결]</li>
+                <li>
+                  1. 카드 터치 시 외부 링크로 이동하지 않고, 앱 내에서 볼 수
+                  있는 페이지로 이동하도록 설계
+                </li>
+                <li>
+                  2. 노데이터 상태를 방지하기 위해 앱 출시 전 콘텐츠를 미리 몇
+                  가지 등록해두는 방식으로 준비
+                </li>
+              </ul>
+              <ul>
+                <li>[결과]</li>
+                <li>
+                  1. 사용자가 외부로 이탈하지 않고 앱 안에서 콘텐츠를 계속
+                  소비하게 되어, 체류 시간과 앱 내 활동을 유지할 수 있음
+                </li>
+              </ul>
+            </div>
+            <div class="troubleshooting_box_beforeANDafter">
+              <img
+                class="troubleshooting_box_img_pc"
+                src="img/png/walkypet4-3.png"
+              />
+              <img
+                class="troubleshooting_box_img_mo"
+                src="img/png/M_walkypet4-3.png"
+              />
+            </div>
+          </div>
+          <!-- 4) 산책 메인 안내 문구 다양화-->
+          <div class="troubleshooting_box" style="border-bottom: 0">
+            <h2>4) 산책 메인 안내 문구 다양화</h2>
+            <div class="troubleshooting_inbox">
+              <ul>
+                <li>[문제]</li>
+                <li>
+                  1. 산책 메인 화면의 안내 문구가 고정되어 있으면 반복 노출 시
+                  지루하게 느껴질 수 있음
+                </li>
+              </ul>
+              <ul>
+                <li>[해결]</li>
+                <li>
+                  1. 여러 개의 문구를 미리 정해두고, 상황이나 방문 시점마다 다른
+                  문구가 노출되도록 롤링 방식 적용
+                </li>
+              </ul>
+              <ul>
+                <li>[결과]</li>
+                <li>
+                  1. 여러 개의 문구를 미리 정해두고, 상황이나 방문 시점마다 다른
+                  문구가 노출되도록 롤링 방식 적용
+                </li>
+                <li style="color: #f46d6d">
+                  &nbsp;&nbsp;&nbsp;예) “오늘 산책 다녀왔어요, 또 가볼까요?” /
+                  “오늘도 함께 걸어볼까요?” 등
+                </li>
+              </ul>
+            </div>
+            <div class="troubleshooting_box_beforeANDafter">
+              <img
+                class="troubleshooting_box_img_pc"
+                src="img/png/walkypet4-4.png"
+              />
+              <img
+                class="troubleshooting_box_img_mo"
+                src="img/png/M_walkypet4-4.png"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="uiux_last">
+          <div class="uiux_last_text">
+            <p class="uiux_last_sub waklypet_color">다이어리</p>
+            <h1>우리 아이의 하루를 기록해요</h1>
+            <p class="uiux_last_text_p1">
+              날짜별로 오늘의 기분과 날씨, 사진까지 간편하게 남길 수 있어요.<br />여러
+              마리를 키운다면<br />반려동물을 한 번에 선택해 함께 기록할 수
+              있어요.
+            </p>
+            <p class="uiux_last_participation">Design & Planning 100%</p>
+          </div>
+          <div class="uiux_last_img">
+            <img class="uiux_last_img_pc" src="img/png/walkypetLastimg1.png" />
+            <img
+              class="uiux_last_img_mo"
+              src="img/png/M_walkypetLastimg1.png"
+            />
+          </div>
+        </div>
+
+        <div class="uiux_last" style="background-color: #f8f8f8">
+          <div class="uiux_last_text">
+            <p class="uiux_last_sub waklypet_color">커뮤니티</p>
+            <h1>반려인들의 이야기가 모이는 곳</h1>
+            <p class="uiux_last_text_p1">
+              펫친구, 펫케어, 펫챌린지까지<br />
+              한 곳에서 다양한 정보와 소통을 나눌 수 있어요.
+            </p>
+            <p class="uiux_last_participation">Design & Planning 100%</p>
+          </div>
+          <div class="uiux_last_img">
+            <img class="uiux_last_img_pc" src="img/png/walkypetLastimg2.png" />
+            <img
+              class="uiux_last_img_mo"
+              src="img/png/M_walkypetLastimg2.png"
+            />
+          </div>
+        </div>
+
+        <div class="uiux_last">
+          <div class="uiux_last_text">
+            <p class="uiux_last_sub waklypet_color">산책</p>
+            <h1>오늘도 함께, 산책 미션 완료!</h1>
+            <p class="uiux_last_text_p1">
+              오늘의 미션을 완료하면 포인트가 쌓이고,<br />
+              걸음 수, 시간, 거리와 산책 경로까지 자동으로 기록돼요.<br /><br />
+              산책 현황 캘린더에서 그동안의 기록을 한눈에 모아볼 수 있어요.
+            </p>
+            <p class="uiux_last_participation">Design & Planning by Teammate</p>
+          </div>
+          <div class="uiux_last_img">
+            <img class="uiux_last_img_pc" src="img/png/walkypetLastimg3.png" />
+            <img
+              class="uiux_last_img_mo"
+              src="img/png/M_walkypetLastimg3.png"
+            />
+          </div>
+        </div>
+
+        <div class="uiux_last" style="background-color: #f8f8f8">
+          <div class="uiux_last_text">
+            <p class="uiux_last_sub waklypet_color">일정</p>
+            <h1>우리 아이 일정, 한눈에 관리해요</h1>
+            <p class="uiux_last_text_p1">
+              카테고리를 선택해 간편하게 일정을 등록해요.<br /><br />
+              반복 설정으로 매일 챙겨야 할 루틴도 빠짐없이 기록하고, 여러 아이를
+              키운다면 함께 선택해 일정을 공유할 수 있어요.
+            </p>
+            <p class="uiux_last_participation">Design & Planning 100%</p>
+          </div>
+          <div class="uiux_last_img">
+            <img class="uiux_last_img_pc" src="img/png/walkypetLastimg4.png" />
+            <img
+              class="uiux_last_img_mo"
+              src="img/png/M_walkypetLastimg4.png"
+            />
+          </div>
+        </div>
+
+        <div class="project_bottom">
+          <div class="app_link_box">
+            <p class="app_link_note">팀 프로젝트 결과물</p>
+            <div class="app_link_list">
+              <a
+                class="app_link walkypetAppLink"
+                href="https://apps.apple.com/kr/app/%EC%9B%8C%ED%82%A4%ED%8E%AB/id6760632010?l=en-GB&platform=vision"
+                target="_blank"
+                rel="noopener noreferrer"
+                >App Store ↗</a
+              >
+              <a
+                class="app_link walkypetAppLink"
+                href="https://play.google.com/store/apps/details?id=co.kr.rinasoft.pet&hl=ko"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Google Play ↗</a
+              >
+            </div>
+          </div>
+
+          <div class="main_back_box">
+            <a href="index.html">
+              <span class="main_back_box_arrow">←</span>
+              <span class="main_back_box_text"
+                >포트폴리오 메인으로 돌아가기</span
+              >
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="gtimer-section work-section">
+        <div id="uiuxgtimer" class="uiux_main">
+          <div class="uiux_main_text">
+            <div class="uiux_main_text_logo">
+              <img src="img/uiuxpng/gtimer_logo.png" alt="앱아이콘" />
+              <div class="gtimer_bg_color">Client Project</div>
+            </div>
+            <h1>공부 측정부터 계획·그룹 스터디까지 담은<br />학습 관리 앱</h1>
+            <p class="uiux_main_text_p1">
+              전달받은 Figma 시안을 바탕으로<br />사용성 개선과 UI 보강을 진행한
+              프로젝트
+            </p>
+            <p class="uiux_main_text_p2">
+              Figma | UX 개선·U I 보강 | 제작 기간 2주
+            </p>
+          </div>
+          <div class="uiux_main_img">
+            <img class="uiux_main_img_pc" src="img/uiuxpng/gtimer-main.png" />
+            <img class="uiux_main_img_mo" src="img/uiuxpng/M_gtimer-main.png" />
+          </div>
+        </div>
+
+        <div class="project_goal uiux_content_section">
+          <h1 class="gtimer_color">#1. 프로젝트 목표</h1>
+          <div class="project_goal_box">
+            <!-- 집중 유도 -->
+            <div class="project_goal_inbox">
+              <img
+                src="img/uiuxpng/gtimercomponent1.png"
+                alt="집중 유도 아이콘"
+              />
+              <h2>집중 유도</h2>
+              <p>
+                집중과 휴식 시간을 내게 맞춰 조절하며 몰입을 돕는 타이머 설계
+              </p>
+            </div>
+            <!-- 기록의 간편함 -->
+            <div class="project_goal_inbox">
+              <img
+                src="img/uiuxpng/gtimercomponent2.png"
+                alt="기록의 간편함 아이콘"
+              />
+              <h2>기록의 즐거움</h2>
+              <p>
+                측정한 시간이 바로 통계에 반영되어 학습 현황을 한눈에 확인하는
+                UI
+              </p>
+            </div>
+            <!-- 계획의 직관성 -->
+            <div class="project_goal_inbox">
+              <img
+                src="img/uiuxpng/gtimercomponent3.png"
+                alt="계획의 직관성 아이콘"
+              />
+              <h2>계획의 직관성</h2>
+              <p>과제를 드래그해 원하는 시간대에 배치하는 쉬운 계획 인터랙션</p>
+            </div>
+            <!-- 함께하는 동기부여 -->
+            <div class="project_goal_inbox">
+              <img
+                src="img/uiuxpng/gtimercomponent4.png"
+                alt="함께하는 동기부여 아이콘"
+              />
+              <h2>함께하는 동기부여</h2>
+              <p>
+                그룹 스터디로 서로 자극받으며 꾸준히 공부할 수 있는 공간 설계
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="design_guide uiux_content_section">
+          <h1 class="gtimer_color">#2. 디자인 가이드</h1>
+          <!-- 브랜드 컬러 -->
+          <div class="design_guide_box">
+            <h2>브랜드 컬러</h2>
+            <div class="design_guide_row">
+              <!-- 메인 컬러 -->
+              <div class="design_guide_inbox">
+                <div
+                  class="design_guide_inbox_color"
+                  style="background-color: #47b0e9"
+                ></div>
+                <div class="design_guide_inbox_text">
+                  <p class="design_guide_inbox_text_top">메인 컬러</p>
+                  <p class="design_guide_inbox_text_bot">#47B0E9</p>
+                </div>
+              </div>
+              <!-- 본문 컬러1 -->
+              <div class="design_guide_inbox">
+                <div
+                  class="design_guide_inbox_color"
+                  style="background-color: #d3eaf6"
+                ></div>
+                <div class="design_guide_inbox_text">
+                  <p class="design_guide_inbox_text_top">보조 컬러1</p>
+                  <p class="design_guide_inbox_text_bot">#D3EAF6</p>
+                </div>
+              </div>
+              <!-- 보조 컬러2 -->
+              <div class="design_guide_inbox">
+                <div
+                  class="design_guide_inbox_color"
+                  style="background-color: #0670a8"
+                ></div>
+                <div class="design_guide_inbox_text">
+                  <p class="design_guide_inbox_text_top">보조 컬러2</p>
+                  <p class="design_guide_inbox_text_bot">#0670A8</p>
+                </div>
+              </div>
+              <!-- 본문 텍스트-->
+              <div class="design_guide_inbox">
+                <div
+                  class="design_guide_inbox_color"
+                  style="background-color: #121212"
+                ></div>
+                <div class="design_guide_inbox_text">
+                  <p class="design_guide_inbox_text_top">본문 텍스트</p>
+                  <p class="design_guide_inbox_text_bot">#121212</p>
+                </div>
+              </div>
+              <!-- 배경 -->
+              <div class="design_guide_inbox">
+                <div
+                  class="design_guide_inbox_color"
+                  style="
+                    background-color: #ffffff;
+                    border-bottom: 1px solid #d0d0d0;
+                  "
+                ></div>
+                <div class="design_guide_inbox_text">
+                  <p class="design_guide_inbox_text_top">배경</p>
+                  <p class="design_guide_inbox_text_bot">#FFFFFF</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 카테고리 컬러 -->
+          <div class="design_guide_box">
+            <h2 style="padding-bottom: 0">카테고리 컬러</h2>
+            <span style="padding-bottom: 2rem"
+              >목표 설정 시 카테고리 구분용</span
+            >
+            <div class="design_guide_row">
+              <!-- Light Green -->
+              <div class="design_guide_inbox">
+                <div
+                  class="design_guide_inbox_color"
+                  style="background-color: #a7e378"
+                ></div>
+                <div class="design_guide_inbox_text">
+                  <p class="design_guide_inbox_text_top">Light Green</p>
+                  <p class="design_guide_inbox_text_bot">#A7E378</p>
+                </div>
+              </div>
+              <!-- Purple -->
+              <div class="design_guide_inbox">
+                <div
+                  class="design_guide_inbox_color"
+                  style="background-color: #6359ed"
+                ></div>
+                <div class="design_guide_inbox_text">
+                  <p class="design_guide_inbox_text_top">Purple</p>
+                  <p class="design_guide_inbox_text_bot">#6359ED</p>
+                </div>
+              </div>
+              <!-- Coral -->
+              <div class="design_guide_inbox">
+                <div
+                  class="design_guide_inbox_color"
+                  style="background-color: #ed6f59"
+                ></div>
+                <div class="design_guide_inbox_text">
+                  <p class="design_guide_inbox_text_top">Coral</p>
+                  <p class="design_guide_inbox_text_bot">#ED6F59</p>
+                </div>
+              </div>
+              <!-- Pink -->
+              <div class="design_guide_inbox">
+                <div
+                  class="design_guide_inbox_color"
+                  style="background-color: #f57da3"
+                ></div>
+                <div class="design_guide_inbox_text">
+                  <p class="design_guide_inbox_text_top">Pink</p>
+                  <p class="design_guide_inbox_text_bot">#F57DA3</p>
+                </div>
+              </div>
+              <!-- Yellow -->
+              <div class="design_guide_inbox">
+                <div
+                  class="design_guide_inbox_color"
+                  style="background-color: #f4b837"
+                ></div>
+                <div class="design_guide_inbox_text">
+                  <p class="design_guide_inbox_text_top">Yellow</p>
+                  <p class="design_guide_inbox_text_bot">#F4B837</p>
+                </div>
+              </div>
+              <!-- Mint -->
+              <div class="design_guide_inbox">
+                <div
+                  class="design_guide_inbox_color"
+                  style="background-color: #7ad6cb"
+                ></div>
+                <div class="design_guide_inbox_text">
+                  <p class="design_guide_inbox_text_top">Mint</p>
+                  <p class="design_guide_inbox_text_bot">#7AD6CB</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 폰트 -->
+          <div
+            class="design_guide_box"
+            style="border-bottom: 0; padding-bottom: 0"
+          >
+            <h2 style="padding-bottom: 0">폰트</h2>
+            <p class="design_guide_box_font_title">
+              가나다&nbsp;&nbsp;&nbsp;ABC
+            </p>
+            <p class="design_guide_box_font_sub">Pretendard</p>
+            <ul>
+              <li>Regular</li>
+              <li>Medium</li>
+              <li>SemiBold</li>
+              <li>Bold</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="menu_structure uiux_content_section">
+          <h1 class="gtimer_color">#3. 메뉴 구조</h1>
+          <div class="menu_structure_row">
+            <div class="menu_structure_label">홈</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">과제 관리</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">타이머 설정, 측정</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">실시간 랭킹</div>
+          </div>
+          <div class="menu_structure_row">
+            <div class="menu_structure_label">플래너</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">캘린더 뷰 (일, 주, 월)</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">시간대별 계획</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">과제 분석</div>
+          </div>
+          <div class="menu_structure_row">
+            <div class="menu_structure_label">통계</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">기간별 조회</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">계획 대비 실제 비교</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">과제 성과 지표</div>
+          </div>
+          <div class="menu_structure_row">
+            <div class="menu_structure_label">그룹</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">그룹 현황, 멤버 관리</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">그룹 랭킹</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">다양한 챌린지</div>
+          </div>
+          <div class="menu_structure_row">
+            <div class="menu_structure_label">마이홈</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">내 정보 관리</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">알림, 휴식시간 설정</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">음악, 동기부여 영상</div>
+          </div>
+        </div>
+
+        <div class="troubleshooting uiux_content_section">
+          <h1 class="gtimer_color">#4. 트러블슈팅 & 의사결정 과정</h1>
+          <!-- 1) 홈 화면 UX 개선 -->
+          <div class="troubleshooting_box">
+            <h2>1) 홈 화면 UX 개선</h2>
+            <div class="troubleshooting_inbox">
+              <ul>
+                <li>[문제]</li>
+                <li>
+                  1. 더보기 버튼의 수정 기능이 하단 수정 버튼과 중복되어 혼란을
+                  줄 수 있음
+                </li>
+                <li>
+                  2. 랭킹 더보기 시 20위씩 노출되어 홈 화면이 길어지고 스크롤
+                  피로도가 커짐
+                </li>
+              </ul>
+              <ul>
+                <li>[해결]</li>
+                <li>1. 중복되는 더보기 버튼 삭제 제안</li>
+                <li>2. 랭킹 노출 단위를 20위 → 10위로 축소 제안</li>
+              </ul>
+              <ul>
+                <li>[결과]</li>
+                <li>1. 하단 수정 버튼으로 기능 통일</li>
+                <li>2. 팀 내부 논의 후 10위씩 노출로 변경</li>
+              </ul>
+            </div>
+            <div class="troubleshooting_box_beforeANDafter">
+              <p class="troubleshooting_box_img_title">
+                Before - 더보기·수정 버튼이 중복되고, 랭킹이 20위씩 길게 노출됨
+              </p>
+              <img
+                class="troubleshooting_box_img_pc"
+                src="img/uiuxpng/gtimer4-1 before.png"
+              />
+              <img
+                class="troubleshooting_box_img_mo"
+                src="img/uiuxpng/M_gtimer4-1 before.png"
+              />
+            </div>
+            <div class="troubleshooting_box_beforeANDafter">
+              <p class="troubleshooting_box_img_title">
+                After - 중복 버튼은 삭제하고, 랭킹을 10위씩 노출해 화면 길이
+                최소화
+              </p>
+              <img
+                class="troubleshooting_box_img_pc"
+                src="img/uiuxpng/gtimer4-1 after.png"
+              />
+              <img
+                class="troubleshooting_box_img_mo"
+                src="img/uiuxpng/M_gtimer4-1 after.png"
+              />
+            </div>
+          </div>
+          <!-- 2) 소형 기기 텍스트 레이아웃 개선 -->
+          <div class="troubleshooting_box">
+            <h2>2) 소형 기기 텍스트 레이아웃 개선</h2>
+            <div class="troubleshooting_inbox">
+              <ul>
+                <li>[문제]</li>
+                <li>
+                  1. 여러 화면에서 제목과 내용이 가로로 나열되어, 소형 기기에서
+                  텍스트가 잘리거나 밀려남
+                </li>
+              </ul>
+              <ul>
+                <li>[해결]</li>
+                <li>
+                  1. 텍스트 길이를 줄이고, 소형 기기에 맞게끔 2줄로 레이아웃
+                  변경
+                </li>
+              </ul>
+              <ul>
+                <li>[결과]</li>
+                <li>
+                  1. 소형 기기에서도 텍스트가 잘리지 않고 정상 노출되며, 화면 간
+                  레이아웃 일관성 확보
+                </li>
+              </ul>
+            </div>
+            <div class="troubleshooting_box_beforeANDafter">
+              <p class="troubleshooting_box_img_title">
+                Before - 제목·내용 가로 나열로 소형 기기에서 텍스트 잘림 (여러
+                화면 공통)
+              </p>
+              <img
+                class="troubleshooting_box_img_pc"
+                src="img/uiuxpng/gtimer4-2 before.png"
+              />
+              <img
+                class="troubleshooting_box_img_mo"
+                src="img/uiuxpng/M_gtimer4-2 before.png"
+              />
+            </div>
+            <div class="troubleshooting_box_beforeANDafter">
+              <p class="troubleshooting_box_img_title">
+                After - 텍스트 길이를 줄이고, 소형 기기에 맞게끔 2줄로 레이아웃
+                변경
+              </p>
+              <img
+                class="troubleshooting_box_img_pc"
+                src="img/uiuxpng/gtimer4-2 after.png"
+              />
+              <img
+                class="troubleshooting_box_img_mo"
+                src="img/uiuxpng/M_gtimer4-2 after.png"
+              />
+            </div>
+          </div>
+          <!-- 3) 입력 규칙 불명확으로 인한 혼란 방지 UX -->
+          <div class="troubleshooting_box">
+            <h2>3) 입력 규칙 불명확으로 인한 혼란 방지 UX</h2>
+            <div class="troubleshooting_inbox">
+              <ul>
+                <li>[문제]</li>
+                <li>
+                  1. 그룹명·닉네임 입력 시 중복 여부, 띄어쓰기, 특수문자 허용
+                  기준이 불명확해 오류 원인을 파악하기 어려움
+                </li>
+              </ul>
+              <ul>
+                <li>[해결]</li>
+                <li>
+                  1. 그룹명에 중복 확인 버튼을 추가하고, 그룹명·닉네임의 입력
+                  규칙(중복·띄어쓰기·특수문자) 명확화 제안
+                </li>
+              </ul>
+              <ul>
+                <li>[결과]</li>
+                <li>1. 중복 확인 버튼 추가 및 입력 규칙 확정 후 반영</li>
+              </ul>
+            </div>
+            <div class="troubleshooting_box_beforeANDafter">
+              <p class="troubleshooting_box_img_title">
+                Before - 입력 기준 불명확
+              </p>
+              <img
+                class="troubleshooting_box_img_pc"
+                src="img/uiuxpng/gtimer4-3 before.png"
+              />
+              <img
+                class="troubleshooting_box_img_mo"
+                src="img/uiuxpng/M_gtimer4-3 before.png"
+              />
+            </div>
+            <div class="troubleshooting_box_beforeANDafter">
+              <p class="troubleshooting_box_img_title">
+                After - 중복 확인 버튼 추가 및 입력 규칙 정의
+              </p>
+              <img
+                class="troubleshooting_box_img_pc"
+                src="img/uiuxpng/gtimer4-3 after.png"
+              />
+              <img
+                class="troubleshooting_box_img_mo"
+                src="img/uiuxpng/M_gtimer4-3 after.png"
+              />
+            </div>
+          </div>
+          <!-- 4) 목표 시간·모집인원 입력 방식 개선-->
+          <div class="troubleshooting_box" style="border-bottom: 0">
+            <h2>4) 목표 시간·모집인원 입력 방식 개선</h2>
+            <div class="troubleshooting_inbox">
+              <ul>
+                <li>[문제]</li>
+                <li>
+                  1. 목표 시간과 모집인원을 드롭다운으로만 선택할 수 있어,
+                  선택지가 많아 탐색이 번거로움
+                </li>
+              </ul>
+              <ul>
+                <li>[해결]</li>
+                <li>1. 드롭다운을 직접 입력 방식으로 변경 제안</li>
+              </ul>
+              <ul>
+                <li>[결과]</li>
+                <li>1. 직접 입력 방식으로 변경되어 사용 편의성 개선</li>
+              </ul>
+            </div>
+            <div class="troubleshooting_box_beforeANDafter">
+              <p class="troubleshooting_box_img_title">
+                Before - 목표 시간·모집인원을 드롭다운으로만 선택
+              </p>
+              <img
+                class="troubleshooting_box_img_pc"
+                src="img/uiuxpng/gtimer4-4 before.png"
+              />
+              <img
+                class="troubleshooting_box_img_mo"
+                src="img/uiuxpng/M_gtimer4-4 before.png"
+              />
+            </div>
+            <div class="troubleshooting_box_beforeANDafter">
+              <p class="troubleshooting_box_img_title">
+                After - 드롭다운 대신 직접 입력 방식으로 변경
+              </p>
+              <img
+                class="troubleshooting_box_img_pc"
+                src="img/uiuxpng/gtimer4-4 after.png"
+              />
+              <img
+                class="troubleshooting_box_img_mo"
+                src="img/uiuxpng/M_gtimer4-4 after.png"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="uiux_last">
+          <div class="uiux_last_text">
+            <p class="uiux_last_sub gtimer_color">측정</p>
+            <h1>G-Timer로 공부시간 집중 측정</h1>
+            <p class="uiux_last_text_p1">
+              원하는 타이머로 내 공부시간을 측정하세요.<br />집중과 휴식 시간을
+              나에 맞춰 조절해보세요.
+            </p>
+            <p class="uiux_last_participation gtimer_bg_color">
+              Usability Review & UI Refinement
+            </p>
+          </div>
+          <div class="uiux_last_img">
+            <img
+              class="uiux_last_img_pc"
+              src="img/uiuxpng/gtimerLastimg1.png"
+            />
+            <img
+              class="uiux_last_img_mo"
+              src="img/uiuxpng/M_gtimerLastimg1.png"
+            />
+          </div>
+        </div>
+
+        <div class="uiux_last" style="background-color: #f8f8f8">
+          <div class="uiux_last_text">
+            <p class="uiux_last_sub gtimer_color">통계 · 플래너</p>
+            <h1>기록은 바로 통계로, 계획은 드래그로</h1>
+            <p class="uiux_last_text_p1">
+              타이머로 측정된 시간은 곧바로 통계에 반영됩니다.<br />
+              과제를 선택 후 드래그하여<br />
+              내가 원하는 시간대로 공부 계획을 세워보세요.
+            </p>
+            <p class="uiux_last_participation gtimer_bg_color">
+              Usability Review & UI Refinement
+            </p>
+          </div>
+          <div class="uiux_last_img">
+            <img
+              class="uiux_last_img_pc"
+              src="img/uiuxpng/gtimerLastimg2.png"
+            />
+            <img
+              class="uiux_last_img_mo"
+              src="img/uiuxpng/M_gtimerLastimg2.png"
+            />
+          </div>
+        </div>
+
+        <div class="uiux_last">
+          <div class="uiux_last_text">
+            <p class="uiux_last_sub gtimer_color">그룹</p>
+            <h1>함께 공부하고, 챌린지로 이어가요</h1>
+            <p class="uiux_last_text_p1">
+              다른 사람과 그룹을 구성해 다 같이 공부해보세요.<br />
+              원하는 그룹을 찾아 함께 공부하고,<br />
+              챌린지에도 도전할 수 있어요.
+            </p>
+            <p class="uiux_last_participation gtimer_bg_color">
+              Usability Review & UI Refinement
+            </p>
+          </div>
+          <div class="uiux_last_img">
+            <img
+              class="uiux_last_img_pc"
+              src="img/uiuxpng/gtimerLastimg3.png"
+            />
+            <img
+              class="uiux_last_img_mo"
+              src="img/uiuxpng/M_gtimerLastimg3.png"
+            />
+          </div>
+        </div>
+
+        <div class="project_bottom">
+          <div class="app_link_box">
+            <p class="app_link_note">클라이언트 서비스 앱</p>
+            <div class="app_link_list">
+              <a
+                class="app_link gtimerAppLink"
+                href="https://apps.apple.com/kr/app/g-timer/id6749556784"
+                target="_blank"
+                rel="noopener noreferrer"
+                >App Store ↗</a
+              >
+              <a
+                class="app_link gtimerAppLink"
+                href="https://play.google.com/store/apps/details?id=co.kr.gschool.timer&hl=ko"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Google Play ↗</a
+              >
+            </div>
+          </div>
+
+          <div class="main_back_box">
+            <a href="index.html">
+              <span class="main_back_box_arrow">←</span>
+              <span class="main_back_box_text"
+                >포트폴리오 메인으로 돌아가기</span
+              >
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-section work-section">
+        <div id="uiuxflip" class="uiux_main">
+          <div class="uiux_main_text">
+            <div class="uiux_main_text_logo">
+              <img src="img/uiuxpng/flip_icon.png" alt="앱아이콘" />
+              <div class="flip_bg_color">Team Project</div>
+            </div>
+            <h1>
+              폰을 뒤집어 집중을 측정,<br />
+              앱 전체를 새로운 분위기로 리뉴얼하다
+            </h1>
+            <p class="uiux_main_text_p1">
+              기존 앱의 사용성을 점검하고 요청사항을 반영해<br />전체를 리뉴얼한
+              프로젝트
+            </p>
+            <p class="uiux_main_text_p2">
+              Figma | UI 디자인 100% · 기획 일부 | 제작 기간 4개월
+            </p>
+          </div>
+          <div class="uiux_main_img">
+            <img class="uiux_main_img_pc" src="img/uiuxpng/flip-main.png" />
+            <img class="uiux_main_img_mo" src="img/uiuxpng/M_flip-main.png" />
+          </div>
+        </div>
+
+        <div class="project_goal uiux_content_section">
+          <h1 class="flip_color">#1. 프로젝트 목표</h1>
+          <div class="project_goal_box">
+            <!-- 사용성 개선 -->
+            <div class="project_goal_inbox">
+              <img
+                src="img/uiuxpng/flipcomponent1.png"
+                alt="사용성 개선 아이콘"
+              />
+              <h2>사용성 개선</h2>
+              <p>
+                기존 앱의 불편한 흐름을 점검해 누구나 쉽게 쓸 수 있는 직관적인
+                UX 설계
+              </p>
+            </div>
+            <!-- 사용자 요청 반영 -->
+            <div class="project_goal_inbox">
+              <img
+                src="img/uiuxpng/flipcomponent2.png"
+                alt="사용자 요청 반영 아이콘"
+              />
+              <h2>사용자 요청 반영</h2>
+              <p>
+                실제 사용자 요청사항을 바탕으로 꼭 필요한 기능과 화면을 보완하는
+                리뉴얼
+              </p>
+            </div>
+            <!-- 일관된 새 분위기 -->
+            <div class="project_goal_inbox">
+              <img
+                src="img/uiuxpng/flipcomponent3.png"
+                alt="일관된 새 분위기 아이콘"
+              />
+              <h2>일관된 새 분위기</h2>
+              <p>
+                컬러와 스타일을 통일해 앱 전체의 인상을 새롭게 바꾸는 UI 디자인
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="design_guide uiux_content_section">
+          <h1 class="flip_color">#2. 디자인 가이드</h1>
+          <!-- 브랜드 컬러 -->
+          <div class="design_guide_box">
+            <h2>브랜드 컬러</h2>
+            <div class="design_guide_row">
+              <!-- 메인 컬러 -->
+              <div class="design_guide_inbox">
+                <div
+                  class="design_guide_inbox_color"
+                  style="background-color: #a17fd0"
+                ></div>
+                <div class="design_guide_inbox_text">
+                  <p class="design_guide_inbox_text_top">메인 컬러</p>
+                  <p class="design_guide_inbox_text_bot">#A17FD0</p>
+                </div>
+              </div>
+              <!-- 보조 컬러 -->
+              <div class="design_guide_inbox">
+                <div
+                  class="design_guide_inbox_color"
+                  style="background-color: #8252ab"
+                ></div>
+                <div class="design_guide_inbox_text">
+                  <p class="design_guide_inbox_text_top">보조 컬러</p>
+                  <p class="design_guide_inbox_text_bot">#8252AB</p>
+                </div>
+              </div>
+              <!-- 본문 텍스트-->
+              <div class="design_guide_inbox">
+                <div
+                  class="design_guide_inbox_color"
+                  style="background-color: #121212"
+                ></div>
+                <div class="design_guide_inbox_text">
+                  <p class="design_guide_inbox_text_top">본문 텍스트</p>
+                  <p class="design_guide_inbox_text_bot">#121212</p>
+                </div>
+              </div>
+              <!-- 배경 -->
+              <div class="design_guide_inbox">
+                <div
+                  class="design_guide_inbox_color"
+                  style="
+                    background-color: #ffffff;
+                    border-bottom: 1px solid #d0d0d0;
+                  "
+                ></div>
+                <div class="design_guide_inbox_text">
+                  <p class="design_guide_inbox_text_top">배경</p>
+                  <p class="design_guide_inbox_text_bot">#FFFFFF</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 집중력 등급 컬러 -->
+          <div class="design_guide_box">
+            <h2 style="padding-bottom: 0">집중력 등급 컬러</h2>
+            <span style="padding-bottom: 2rem"
+              >집중력 등급을 구분하는 색상 (집중 시간 전 휴식 시 등급
+              하락)</span
+            >
+            <div class="design_guide_row">
+              <!-- A 최상 -->
+              <div class="design_guide_inbox">
+                <div
+                  class="design_guide_inbox_color"
+                  style="background-color: #dd6662"
+                ></div>
+                <div class="design_guide_inbox_text">
+                  <p class="design_guide_inbox_text_top">A 최상</p>
+                  <p class="design_guide_inbox_text_bot">#DD6662</p>
+                </div>
+              </div>
+              <!-- B 우수 -->
+              <div class="design_guide_inbox">
+                <div
+                  class="design_guide_inbox_color"
+                  style="background-color: #efbc61"
+                ></div>
+                <div class="design_guide_inbox_text">
+                  <p class="design_guide_inbox_text_top">B 우수</p>
+                  <p class="design_guide_inbox_text_bot">#EFBC61</p>
+                </div>
+              </div>
+              <!-- C 양호 -->
+              <div class="design_guide_inbox">
+                <div
+                  class="design_guide_inbox_color"
+                  style="background-color: #91c263"
+                ></div>
+                <div class="design_guide_inbox_text">
+                  <p class="design_guide_inbox_text_top">C 양호</p>
+                  <p class="design_guide_inbox_text_bot">#91C263</p>
+                </div>
+              </div>
+              <!-- D 보통 -->
+              <div class="design_guide_inbox">
+                <div
+                  class="design_guide_inbox_color"
+                  style="background-color: #71bfe5"
+                ></div>
+                <div class="design_guide_inbox_text">
+                  <p class="design_guide_inbox_text_top">D 보통</p>
+                  <p class="design_guide_inbox_text_bot">#71BFE5</p>
+                </div>
+              </div>
+              <!-- E 미흡 -->
+              <div class="design_guide_inbox">
+                <div
+                  class="design_guide_inbox_color"
+                  style="background-color: #728ed9"
+                ></div>
+                <div class="design_guide_inbox_text">
+                  <p class="design_guide_inbox_text_top">E 미흡</p>
+                  <p class="design_guide_inbox_text_bot">#728ED9</p>
+                </div>
+              </div>
+              <!-- F 부족 -->
+              <div class="design_guide_inbox">
+                <div
+                  class="design_guide_inbox_color"
+                  style="background-color: #a0a0a0"
+                ></div>
+                <div class="design_guide_inbox_text">
+                  <p class="design_guide_inbox_text_top">F 부족</p>
+                  <p class="design_guide_inbox_text_bot">#A0A0A0</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 폰트 -->
+          <div
+            class="design_guide_box"
+            style="border-bottom: 0; padding-bottom: 0"
+          >
+            <h2 style="padding-bottom: 0">폰트</h2>
+            <p
+              class="design_guide_box_font_title"
+              style="font-family: &quot;Noto Sans KR&quot;, sans-serif"
+            >
+              가나다&nbsp;&nbsp;&nbsp;ABC
+            </p>
+            <p
+              class="design_guide_box_font_sub"
+              style="font-family: &quot;Noto Sans KR&quot;, sans-serif"
+            >
+              Noto Sans
+            </p>
+            <ul>
+              <li style="font-family: &quot;Noto Sans KR&quot;, sans-serif">
+                Regular
+              </li>
+              <li style="font-family: &quot;Noto Sans KR&quot;, sans-serif">
+                Medium
+              </li>
+              <li style="font-family: &quot;Noto Sans KR&quot;, sans-serif">
+                SemiBold
+              </li>
+              <li style="font-family: &quot;Noto Sans KR&quot;, sans-serif">
+                Bold
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="menu_structure uiux_content_section">
+          <h1 class="flip_color">#3. 메뉴 구조</h1>
+          <div class="menu_structure_row">
+            <div class="menu_structure_label">스터디그룹</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">그룹(일반, 도전)</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">챌린지</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">리워드 획득</div>
+          </div>
+          <div class="menu_structure_row">
+            <div class="menu_structure_label">통계</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">일, 주, 월 조회</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">시간대별, 일별 공부시간</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">타임라인</div>
+          </div>
+          <div class="menu_structure_row">
+            <div class="menu_structure_label">홈</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">오늘의 목표</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">친구, 그룹 공부 현황</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">설정 컨텐츠 요약</div>
+          </div>
+          <div class="menu_structure_row">
+            <div class="menu_structure_label">타임테이블</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">날짜별 조회</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">목표, 기록 추가</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">코멘트 작성</div>
+          </div>
+          <div class="menu_structure_row">
+            <div class="menu_structure_label">더보기</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">공부 관리</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">소통, 랭킹</div>
+            <div class="menu_structure_line"></div>
+            <div class="menu_structure_card">이벤트, 리워드</div>
+          </div>
+        </div>
+
+        <div class="troubleshooting uiux_content_section">
+          <h1 class="flip_color">#4. 트러블슈팅 & 의사결정 과정</h1>
+          <!-- 1) 타임테이블 UI/UX 개선 (반영 전) -->
+          <div class="troubleshooting_box">
+            <h2>1) 타임테이블 UI/UX 개선 (반영 전)</h2>
+            <div class="troubleshooting_inbox">
+              <ul>
+                <li>[문제]</li>
+                <li>1. 목표와 시간을 한눈에 파악하기 어려움</li>
+                <li>2. 메모를 남길 공간이 없음</li>
+              </ul>
+              <ul>
+                <li>[해결]</li>
+                <li>1. 오늘의 목표 목록과 시간표를 한 화면에 나란히 배치</li>
+                <li>2. 메모 영역 추가</li>
+              </ul>
+              <ul>
+                <li>[결과]</li>
+                <li>1. 목표별 시간과 공부 기록을 한 화면에서 확인 가능</li>
+                <li>2. 공부 내용을 메모로 함께 기록할 수 있도록 개선</li>
+              </ul>
+            </div>
+            <div class="troubleshooting_box_beforeANDafter">
+              <p class="troubleshooting_box_img_title">
+                Before - 목표와 시간 기록이 분리되어 파악이 어렵고, 메모 공간이
+                없음
+              </p>
+              <img
+                class="troubleshooting_box_img_pc"
+                src="img/uiuxpng/flip4-1 before.png"
+              />
+              <img
+                class="troubleshooting_box_img_mo"
+                src="img/uiuxpng/M_flip4-1 before.png"
+              />
+            </div>
+            <div class="troubleshooting_box_beforeANDafter">
+              <p class="troubleshooting_box_img_title">
+                After - 목표와 시간표를 함께 배치하고, 메모 영역을 추가
+              </p>
+              <img
+                class="troubleshooting_box_img_pc"
+                src="img/uiuxpng/flip4-1 after.png"
+              />
+              <img
+                class="troubleshooting_box_img_mo"
+                src="img/uiuxpng/M_flip4-1 after.png"
+              />
+            </div>
+          </div>
+          <!-- 2) 통계 UI/UX 개선 (반영 전) -->
+          <div class="troubleshooting_box">
+            <h2>2) 통계 UI/UX 개선 (반영 전)</h2>
+            <div class="troubleshooting_inbox">
+              <ul>
+                <li>[문제]</li>
+                <li>
+                  1. 선택한 날짜만 확인할 수 있어 기간 전체의 공부량을 비교하기
+                  어려움
+                </li>
+                <li>
+                  2. 시간대별 그래프가 공부 시간만 보여줘 어떤 목표를 공부했는지
+                  알 수 없음
+                </li>
+                <li>
+                  3. 타임라인이 더보기에 따로 있어 통계와 함께 확인하기 번거로움
+                </li>
+              </ul>
+              <ul>
+                <li>[해결]</li>
+                <li>
+                  1. 캘린더를 배치하고, 공부시간이 길수록 색이 진해지도록
+                  투명도(오파시티) 적용
+                </li>
+                <li>2. 시간대별 그래프에 개인이 설정한 목표 색상 표시</li>
+                <li>3. 더보기의 타임라인을 통계 화면에 통합</li>
+              </ul>
+              <ul>
+                <li>[결과]</li>
+                <li>1. 캘린더의 색 농도로 날짜별 공부량을 한눈에 파악 가능</li>
+                <li>
+                  2. 시간대별로 어떤 목표를 얼마나 공부했는지 그래프로 확인 가능
+                </li>
+                <li>3. 통계와 타임라인을 한 화면에서 확인 가능</li>
+              </ul>
+            </div>
+            <div class="troubleshooting_box_beforeANDafter">
+              <p class="troubleshooting_box_img_title">Before</p>
+              <img
+                class="troubleshooting_box_img_pc"
+                src="img/uiuxpng/flip4-2 before.png"
+              />
+              <img
+                class="troubleshooting_box_img_mo"
+                src="img/uiuxpng/M_flip4-2 before.png"
+              />
+            </div>
+            <div class="troubleshooting_box_beforeANDafter">
+              <p class="troubleshooting_box_img_title">After</p>
+              <!-- a -->
+              <img
+                class="troubleshooting_box_img_pc"
+                src="img/uiuxpng/flip4-2a after.png"
+              />
+              <img
+                class="troubleshooting_box_img_mo"
+                src="img/uiuxpng/M_flip4-2a after.png"
+              />
+              <!-- b -->
+              <img
+                class="troubleshooting_box_img_pc"
+                src="img/uiuxpng/flip4-2b after.png"
+              />
+              <img
+                class="troubleshooting_box_img_mo"
+                src="img/uiuxpng/M_flip4-2b after.png"
+              />
+              <!-- c -->
+              <img
+                class="troubleshooting_box_img_pc"
+                src="img/uiuxpng/flip4-2c after.png"
+              />
+              <img
+                class="troubleshooting_box_img_mo"
+                src="img/uiuxpng/M_flip4-2c after.png"
+              />
+            </div>
+          </div>
+          <!-- 3) 측정 화면 UX 개선 (반영 전) -->
+          <div class="troubleshooting_box">
+            <h2>3) 측정 화면 UX 개선 (반영 전)</h2>
+            <div class="troubleshooting_inbox">
+              <ul>
+                <li>[문제]</li>
+                <li>
+                  1. 정해진 목표 시간의 공부·휴식만 측정할 수 있어 공부 방식을
+                  선택할 수 없음
+                </li>
+                <li>
+                  2. 라이브 중인 사람을 보려면 라이브 버튼을 눌러 별도 화면으로
+                  이동해야 함
+                </li>
+              </ul>
+              <ul>
+                <li>[해결]</li>
+                <li>
+                  1. 일반 모드에 뽀모도로 모드를 추가해 두 모드를 함께 제공
+                </li>
+                <li>2. 라이브를 하단 컨텐츠로 이동해 측정 화면에 통합</li>
+              </ul>
+              <ul>
+                <li>[결과]</li>
+                <li>1. 원하는 모드를 선택해 공부 시간 측정 가능</li>
+                <li>
+                  2. 현재 측정 시간과 라이브를 한 화면에서 동시에 확인 가능
+                </li>
+              </ul>
+            </div>
+            <div class="troubleshooting_box_beforeANDafter">
+              <p class="troubleshooting_box_img_title">
+                Before - 일반 모드만 측정 가능하고, 라이브는 버튼을 눌러 별도
+                확인
+              </p>
+              <img
+                class="troubleshooting_box_img_pc"
+                src="img/uiuxpng/flip4-3 before.png"
+              />
+              <img
+                class="troubleshooting_box_img_mo"
+                src="img/uiuxpng/M_flip4-3 before.png"
+              />
+            </div>
+            <div class="troubleshooting_box_beforeANDafter">
+              <p class="troubleshooting_box_img_title">
+                After - 뽀모도로·일반 모드를 선택하고, 하단에서 라이브를 함께
+                확인
+              </p>
+              <img
+                class="troubleshooting_box_img_pc"
+                src="img/uiuxpng/flip4-3 after.png"
+              />
+              <img
+                class="troubleshooting_box_img_mo"
+                src="img/uiuxpng/M_flip4-3 after.png"
+              />
+            </div>
+          </div>
+          <!-- 4) 사용자 요청사항을 기반으로 한 출석체크 및 미션 기획 -->
+          <div class="troubleshooting_box" style="border-bottom: 0">
+            <h2>4) 사용자 요청사항을 기반으로 한 출석체크 및 미션 기획</h2>
+            <div class="troubleshooting_inbox">
+              <ul>
+                <li>[문제]</li>
+                <li>1. 매일 앱에 접속할 동기가 부족하다는 사용자 요청</li>
+              </ul>
+              <ul>
+                <li>[해결]</li>
+                <li>
+                  1. 연속 출석일에 따라 코인 지급량이 늘어나는 출석체크 기획
+                </li>
+                <li>2. 앱 첫 진입 시 출석체크 팝업 표시</li>
+              </ul>
+              <ul>
+                <li>[결과]</li>
+                <li>1. 출석 성공·실패와 획득 코인을 캘린더에서 확인 가능</li>
+                <li>2. 연속 출석을 유도하는 보상 구조 제안</li>
+              </ul>
+            </div>
+            <div class="troubleshooting_box_beforeANDafter">
+              <p class="troubleshooting_box_img_title">출석체크</p>
+              <img
+                class="troubleshooting_box_img_pc"
+                src="img/uiuxpng/flip4-4a.png"
+              />
+              <img
+                class="troubleshooting_box_img_mo"
+                src="img/uiuxpng/M_flip4-4a.png"
+              />
+            </div>
+            <div class="troubleshooting_inbox" style="margin-top: 30px">
+              <ul>
+                <li>[문제]</li>
+                <li>
+                  1. 공부 목표를 달성했을 때 보상을 받을 수 있으면 좋을 것
+                  같다는 사용자 요청
+                </li>
+              </ul>
+              <ul>
+                <li>[해결]</li>
+                <li>1. 하루·주간 공부시간 달성 시 코인을 지급하는 미션 기획</li>
+                <li>2. 홈 화면에 미션 진행률 표시</li>
+              </ul>
+              <ul>
+                <li>[결과]</li>
+                <li>1. 미션 진행률과 달성 현황을 한눈에 확인 가능</li>
+                <li>2. 목표 달성에 따른 보상 구조 제안</li>
+              </ul>
+            </div>
+            <div class="troubleshooting_box_beforeANDafter">
+              <p class="troubleshooting_box_img_title">미션</p>
+              <img
+                class="troubleshooting_box_img_pc"
+                src="img/uiuxpng/flip4-4b.png"
+              />
+              <img
+                class="troubleshooting_box_img_mo"
+                src="img/uiuxpng/M_flip4-4b.png"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="uiux_last">
+          <div class="uiux_last_text">
+            <p class="uiux_last_sub flip_color">측정</p>
+            <h1>목표를 만들고 측정하세요</h1>
+            <p class="uiux_last_text_p1">
+              뽀모도로 방식으로 측정해보세요.<br />
+              지금 함께 공부 중인 친구들을 보며 자극받고,<br />
+              집중 시간은 그래프로 실시간 확인할 수 있어요.
+            </p>
+            <p class="uiux_last_participation flip_bg_color">
+              Design 100% · Planning Support
+            </p>
+          </div>
+          <div class="uiux_last_img">
+            <img class="uiux_last_img_pc" src="img/uiuxpng/flipLastimg1.png" />
+            <img
+              class="uiux_last_img_mo"
+              src="img/uiuxpng/M_flipLastimg1.png"
+            />
+          </div>
+        </div>
+
+        <div class="uiux_last" style="background-color: #f8f8f8">
+          <div class="uiux_last_text">
+            <p class="uiux_last_sub flip_color">스터디그룹</p>
+            <h1>전 세계 친구와 함께, 공부 효율은 두 배로</h1>
+            <p class="uiux_last_text_p1">
+              국내외 사용자들과 그룹을 맺어 함께 공부해보세요.<br />
+              챌린지, 공부 인증, 게시판 등<br />
+              다양한 콘텐츠로 공부 효율을 높일 수 있어요.
+            </p>
+            <p class="uiux_last_participation flip_bg_color">
+              Design 100% · Planning Support
+            </p>
+          </div>
+          <div class="uiux_last_img">
+            <img class="uiux_last_img_pc" src="img/uiuxpng/flipLastimg2.png" />
+            <img
+              class="uiux_last_img_mo"
+              src="img/uiuxpng/M_flipLastimg2.png"
+            />
+          </div>
+        </div>
+
+        <div class="uiux_last">
+          <div class="uiux_last_text">
+            <p class="uiux_last_sub flip_color">열공카페</p>
+            <h1>묻고, 나누고, 자랑하는 공부 커뮤니티</h1>
+            <p class="uiux_last_text_p1">
+              도전, 공부 질문, 익명 게시판 등<br />
+              다양한 게시판에서 활동해보세요.<br />
+              모르는 건 친구에게 묻고, 오늘의 공부는 자랑해보세요.
+            </p>
+            <p class="uiux_last_participation flip_bg_color">
+              Design 100% · Planning Support
+            </p>
+          </div>
+          <div class="uiux_last_img">
+            <img class="uiux_last_img_pc" src="img/uiuxpng/flipLastimg3.png" />
+            <img
+              class="uiux_last_img_mo"
+              src="img/uiuxpng/M_flipLastimg3.png"
+            />
+          </div>
+        </div>
+
+        <div class="uiux_last" style="background-color: #f8f8f8">
+          <div class="uiux_last_text">
+            <p class="uiux_last_sub flip_color">통계 · 타임테이블</p>
+            <h1>목표와 실제 공부시간, 한눈에 확인</h1>
+            <p class="uiux_last_text_p1">
+              목표 시간과 실제 공부시간을 그래프로 확인하고,<br />
+              시간대별 달성 목표와 하루의 흐름을<br />
+              타임라인으로 확인해보세요.
+            </p>
+            <p class="uiux_last_participation flip_bg_color">
+              Design 100% · Planning Support
+            </p>
+          </div>
+          <div class="uiux_last_img">
+            <img class="uiux_last_img_pc" src="img/uiuxpng/flipLastimg4.png" />
+            <img
+              class="uiux_last_img_mo"
+              src="img/uiuxpng/M_flipLastimg4.png"
+            />
+          </div>
+        </div>
+
+        <div class="uiux_last">
+          <div class="uiux_last_text">
+            <p class="uiux_last_sub flip_color">데일리 리포트</p>
+            <h1>기간별 공부 리포트로 습관 점검하기</h1>
+            <p class="uiux_last_text_p1">
+              일간, 주간, 월간으로 나눠<br />
+              나의 공부 현황을 리포트로 확인해보세요.<br />
+              기간별로 공부 흐름을 돌아볼 수 있어요.
+            </p>
+            <p class="uiux_last_participation flip_bg_color">
+              Design 100% · Planning Support
+            </p>
+          </div>
+          <div class="uiux_last_img">
+            <img class="uiux_last_img_pc" src="img/uiuxpng/flipLastimg5.png" />
+            <img
+              class="uiux_last_img_mo"
+              src="img/uiuxpng/M_flipLastimg5.png"
+            />
+          </div>
+        </div>
+
+        <div class="project_bottom">
+          <div class="app_link_box">
+            <p class="app_link_note">클라이언트 서비스 앱</p>
+            <div class="app_link_list">
+              <a
+                class="app_link flipAppLink"
+                href="https://apps.apple.com/kr/app/%EC%97%B4%EA%B3%B5%EC%8B%9C%EA%B0%84-%EC%A7%91%EC%A4%91%EB%A0%A5-%EA%B3%B5%EB%B6%80%EC%8B%9C%EA%B0%84-%ED%83%80%EC%9D%B4%EB%A8%B8/id1435127190"
+                target="_blank"
+                rel="noopener noreferrer"
+                >App Store ↗</a
+              >
+              <a
+                class="app_link flipAppLink"
+                href="https://play.google.com/store/apps/details?id=kr.co.rinasoft.yktime&hl=ko"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Google Play ↗</a
+              >
+            </div>
+          </div>
+
+          <div class="main_back_box">
+            <a href="index.html">
+              <span class="main_back_box_arrow">←</span>
+              <span class="main_back_box_text"
+                >포트폴리오 메인으로 돌아가기</span
+              >
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const links = document.querySelectorAll(".nav-link");
+
+      // 네비 href
+      const tabs = {
+        "#uiuxwalkypet": ".walkypet-section",
+        "#uiuxgtimer": ".gtimer-section",
+        "#uiuxflip": ".flip-section",
+      };
+
+      // 선택한 탭만 보이게
+      function showTab(hash) {
+        if (!tabs[hash]) hash = "#uiuxwalkypet";
+
+        // 섹션 보이기/숨기기
+        Object.entries(tabs).forEach(([key, selector]) => {
+          const section = document.querySelector(selector);
+          if (!section) return;
+          section.style.display = key === hash ? "" : "none";
+        });
+
+        // 네비 active 표시
+        links.forEach((link) => {
+          link.classList.toggle("active", link.getAttribute("href") === hash);
+        });
+
+        window.scrollTo({ top: 0, behavior: "instant" });
+      }
+
+      // 네비 클릭
+      links.forEach((link) => {
+        link.addEventListener("click", (e) => {
+          e.preventDefault();
+          const hash = link.getAttribute("href");
+          showTab(hash);
+          history.replaceState(null, "", hash);
+        });
+      });
+
+      // 최초 실행
+      showTab(location.hash);
+    </script>
+  </body>
+</html>
