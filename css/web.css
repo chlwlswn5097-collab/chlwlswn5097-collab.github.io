@@ -194,6 +194,8 @@
 }
   .web_main_img_pc{
     display: block;
+    margin: 0 auto;
+    width: 85%;
   }
   .web_main_img_mo{
     display: none;
